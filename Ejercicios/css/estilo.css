@@ -45,7 +45,9 @@ nav li {
 
 nav li:hover {
     background-color: #4da1b0;
-    border: 2px solid #1b5775;
+    -webkit-box-shadow: 0 0 0 2px rgba(27,87,117,1);
+    -moz-box-shadow: 0 0 0 2px rgba(27,87,117,1);
+    box-shadow: 0 0 0 2px rgba(27,87,117,1);
 }
 
 nav a {
