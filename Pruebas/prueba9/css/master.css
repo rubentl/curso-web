@@ -1,0 +1,51 @@
+/* CSS DOCUMENT */
+
+body,html{
+  padding: 10px 40px;
+}
+
+h1{
+  text-align: center;
+  color: rgb(20, 130, 121);
+  border-bottom: 1px solid #000;
+}
+
+table{
+  margin-top: 50px;
+  border: 2px solid #000;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+#primera {
+  width: 100%;
+}
+
+#primera td{
+  padding: 10px;
+  border: 1px solid #000;
+  width: 20%;
+}
+
+#primera tr:nth-child(1){
+  background-color: #9edf84;
+}
+
+#primera td:nth-child(1){
+  background-color: yellow;
+  width: 40%;
+}
+
+.marron{
+  background-color: #9d715b;
+}
+
+#segunda{
+  width: 50%;
+  margin: 50px auto;
+}
+
+#segunda td{
+  border: 1px solid #000;
+  padding: 10px;
+}

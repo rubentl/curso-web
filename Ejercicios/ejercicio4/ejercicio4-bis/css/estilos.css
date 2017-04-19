@@ -1,0 +1,89 @@
+/* css document */
+
+body {
+    background-color: #eef7aa;
+    font-family: verdana;
+}
+
+hr {
+    color: saddlebrown;
+}
+
+h1 {
+    text-align: center;
+    font-family: Comic sans ms;
+    color: blue;
+    font-style: italic;
+}
+
+p {
+    color: saddlebrown;
+    text-align: center;
+}
+
+blockquote {
+    color: green;
+}
+
+.est1{
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+    color: #ff0000;
+}
+
+.est2{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.est3{
+    font-family: Comic sans ms;
+    font-size: 2em;
+    font-weight: 200;
+}
+
+.est4{
+    text-decoration: underline;
+    font-style: italic;
+    color:deepskyblue;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.resaltado {
+    color: black;
+    font-family: Georgia;
+    font-size: 2em;
+}
+
+.rojo {
+    color: red;
+}
+
+ol.latino {
+    list-style: upper-latin;
+    font-size: 0.9em;
+    font-family: Georgia;
+}
+
+ol.romano {
+    list-style: upper-roman;
+    font-family: Georgia;
+    font-size: 0.8em;
+    color: #004080;
+}

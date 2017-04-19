@@ -1,0 +1,39 @@
+/*css document*/
+
+body{
+  background-color: #a6dbc6;
+  font-family: serif;
+}
+
+img{
+  margin: 10px;
+}
+
+.cabeza{
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+
+.izda{
+  float:left;
+}
+
+.dcha{
+  float:right;
+  width: 30%;
+}
+
+.pie{
+  text-align: center;
+  border-top: 2px solid black;
+  margin-right: 32%;
+  padding-top: 30px;
+}
+
+
+a:hover{
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,87 @@
+/* css document */
+
+body {
+    background-color: #eef6ea;
+    font-family: verdana;
+}
+
+hr {
+    color: red;
+}
+
+h1 {
+    text-align: center;
+    font-family: Comic sans ms;
+    color: red;
+    font-style: italic;
+}
+
+p {
+    color: blue;
+    text-align: justify;
+}
+
+blockquote {
+    color: green;
+}
+
+.est1{
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+    color: #808000;
+}
+
+.est2{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.est3{
+    font-family: Comic sans ms;
+    font-size: 1.3em;
+    font-weight: 200;
+}
+
+.justificado {
+    text-align: justify;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.resaltado {
+    color: black;
+    font-family: Georgia;
+    font-size: 2em;
+}
+
+.rojo {
+    color: red;
+}
+
+ul.circulo {
+    list-style: circle;
+    font-size: 0.9em;
+    font-family: Georgia;
+}
+
+ul.cuadrado {
+    list-style: square;
+    font-family: Georgia;
+    font-size: 0.8em;
+    color: #0000ff;
+}

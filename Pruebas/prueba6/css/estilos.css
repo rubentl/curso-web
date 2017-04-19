@@ -1,0 +1,52 @@
+/*css document*/
+
+body {
+    background: #777;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(245, 223, 4);
+    width: 40%;
+    margin: 30px auto;
+    border-bottom: 4px double rgb(245, 223, 4);
+}
+
+#menu {
+    list-style: none;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#menu li {
+    float:left;
+    border: 2px solid rgb(245, 223, 4);
+    width: 13%;
+    height: 100px;
+    margin: 0 6px;
+    text-align: center;
+    background-color: #9a4c4c;
+}
+
+#menu li a {
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: verdana;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#menu li a:hover {
+    display: block;
+    color: rgb(245, 223, 4);
+    padding: 20px;
+    text-decoration: underline;
+    font-family: arial;
+    font-style: 30px;
+    font-weight: normal;
+    background-color: #128379;
+}

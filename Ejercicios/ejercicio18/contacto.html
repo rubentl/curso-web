@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contacto.css" type="text/css">
+    <title>Sidrería Muros</title>
+</head>
+
+<body>
+<div id="contenedor">
+    <header>
+        <img src="img/Logo-Muros.png" alt="Sidrería Muros">
+        <div id="minimenu">
+            <a href="index.html">Inicio</a> ~ <a href="#">Localización</a> ~ <a href="contacto.html">Contacto</a>
+        </div>
+        <div id="migas">
+            <p>Está en: Inicio ~ Contacto</p>
+        </div>
+        <div id="menu">
+            <a href="index.html">INICIO</a>
+            <a href="#">COCINA</a>
+            <a href="#">INSTALACIONES</a>
+            <a href="#">JORNADAS</a>
+            <a href="trulli.html">"EL TRULLI"</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="#">LOCALIZACIÓN</a>
+        </div>
+    </header>
+    <main>
+      <h1>Contacto</h1>
+      <p>Con esta página podrás solicitar una reserva y dejarnos tus comentarios y/o sugerencias.</p>
+      <form action="mensaje.html" method="post">
+            <label for="nombre">Nombre:</label><input type="text" name="nombre" id="nombre" size="40" maxlength="40"><br/>
+            <label for="dia">Día:</label><input type="text" name="dia" id="dia" size="10" maxlength="10" value="dd/mm/aaaa"><br/>
+            <label for="hora">Hora:</label><input type="text" name="hora" id="hora" size="5" maxlength="5" value="hh:mm"><br/>
+            <label for="comensales">Comensales:</label><input type="text" name="comensales" id="comensales" size="2" maxlength="2"><br/>
+            <label for="sugerencias">Sugerencias:</label><textarea name="sugerencias" id="sugerencias" rows="8" cols="30"></textarea>
+            <input type="submit" name="enviar" value="Enviar" id="enviar">
+     </form>
+    </main>
+<footer>
+    <p>© Sidreria Muros. Tel: 985 41 01 78. Queda prohibida su reproducción parcial o total sin consentimiento por escrito. Todos los derechos reservados</p>
+</footer>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+/* css document */
+
+body {
+    background: url("../img/fondo.gif");
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    color: yellow;
+    font-size: 3vw;
+    border-top: 5px solid yellow;
+    border-bottom: 5px solid yellow;
+    padding: 20px;
+    margin: 0px;
+}
+
+ol {
+    border-bottom: 5px solid yellow;
+    padding-left: 80px;
+    padding-right: 250px;
+}
+
+li {
+    border-bottom: 2px solid yellow;
+    margin-right: 540px;
+    margin-bottom: 40px;
+    padding-bottom: 5px;
+    font-size: 1.6vw;
+    font-family: sans-serif;
+}
+
+p {
+    padding: 0px 60px 0px 40px;
+}
+
+.estilo {
+    text-align: right;
+    font-family: sans-serif;
+}
+
+.estilo1 {
+    text-decoration: underline;
+}
+
+.estilo2 {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.estilo3{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.estilo4 {
+    text-decoration: underline;
+    font-style: italic;
+    font-family: Courier New;
+}
+
+.estilo5 {
+    font-weight: bold;
+}

@@ -1,0 +1,205 @@
+/* css document */
+
+body, html{
+  box-sizing: border-box;
+  font-family: 'Monaco for Powerline';
+}
+
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contenedor{
+  flex: 0 0 90%;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: space-between;
+}
+
+#header{
+  border-bottom: 1px solid black;
+  flex: 0 0 100%;
+  margin-bottom: 10px;
+  min-height: 100px;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#logo{
+  flex: 0 0 30%;
+}
+
+#logo img{
+  padding: 10px;
+  width: 30%;
+}
+
+#minimenu{
+  flex: 0 1 20%;
+  padding: 10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#minimenu a{
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+#minimenu a:hover{
+  background-color: black;
+  color:white;
+}
+
+#main{
+  flex: 0 0 100%;
+  margin-bottom: 10px;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#izda{
+  border-right: 1px solid black;
+  flex: 0 0 20%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#izda p{
+  text-align: center;
+}
+
+#izda img{
+  width: 60%;
+}
+
+#menu{
+  margin: 30px auto;
+}
+
+#menu ul{
+  flex: 0 0 80%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul li{
+  border: 1px solid black;
+  margin-bottom: 5px;
+}
+
+#menu li a{
+  display: block;
+  padding: 5px 20px;
+  text-decoration:none;
+  color: black;
+  text-align: center;
+}
+
+#menu li a:hover{
+  background-color: black;
+  color:white;
+}
+
+#centro{
+  flex: 1 1 auto;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  /*align-content: flex-start;*/
+  align-items: flex-start;
+}
+
+#centro p {
+  padding: 5px;
+}
+
+#capa_1{
+  flex: 1 1 30%;
+  border-right: 1px solid black;
+  text-align: center;
+}
+
+#capa_1 img{
+  width: 60%;
+}
+
+#capa_2{
+  flex: 1 1 30%;
+  border-right: 1px solid black;
+  text-align: center;
+}
+
+#capa_2 img{
+  width: 60%;
+}
+
+#capa_3{
+  flex: 1 1 30%;
+  /*border: 1px solid black;*/
+  text-align: center;
+}
+
+#capa_3 img{
+  width: 60%;
+}
+
+#capa_4{
+  flex: 1 1 30%;
+  border-right: 1px solid black;
+  text-align: center;
+}
+
+#capa_4 img{
+  width: 60%;
+}
+
+#capa_5{
+  flex: 1 1 30%;
+  /*border: 1px solid black;*/
+  text-align: center;
+}
+
+#capa_5 img{
+  width: 40%;
+}
+
+#dcha{
+  border-left: 1px solid black;
+  flex: 0 0 20%;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+#dcha p{
+  padding: 5px;
+}
+
+#dcha img{
+  width: 100px;
+}
+
+#pie{
+  border-top: 1px solid black;
+  flex: 0 0 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

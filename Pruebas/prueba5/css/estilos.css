@@ -1,0 +1,21 @@
+/* css document */
+
+body{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: url('../img/background.png');
+  /*background-position: center center;
+  background-size: 100% 100%;*/
+  color: rgb(16, 141, 203);
+  padding: 0px 60px;
+}
+
+h1{
+  text-align: center;
+  font-size: 3em;
+}
+
+p{
+  text-align: justify;
+}

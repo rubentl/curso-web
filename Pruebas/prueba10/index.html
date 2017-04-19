@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/master.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba 9</title>
+</head>
+
+<body>
+  <h1>Vamos a hacer LISTAS DESCRIPTIVAS</h1>
+  <dl>
+    <dt>Denominación del curso</dt>
+    <dd>Confección y publicación de páginas web</dd>
+    <dt>Horas</dt>
+    <dd>560 horas</dd>
+    <dt>Contenidos</dt>
+    <dd>Construcción de páginas web y otras cosas</dd>
+  </dl>
+
+  <h1>Formulario de CONTACTO</h1>
+  <form action="mensaje.html" name="Formulacio de contacto" method="post">
+    <dl>
+      <dt><label for="nombre">Nombre:</label></dt>
+      <dd><input type="text" name="nombre" id="nombre" size="50" maxlength="50" value="Introduce tu nombre" /></dd>
+      <dt><label for="usuario">Usuario:</label></dt>
+      <dd><input type="text" name="usuario" id="usuario" size="40" maxlength="40" /></dd>
+      <dt><label for="clave">Clave:</label></dt>
+      <dd><input type="password" name="clave" id="clave" size="16" maxlength="16" /></dd>
+      <dt><label for="observaciones">Observaciones:</label></dt>
+      <dd><textarea name="observaciones" id="observaciones" rows="20" cols="100">Introduce tu consulta</textarea></dd>
+      <dt><label for="conocido">Cómo nos ha conocido:</label></dt>
+      <dd><select name="forma" id="conocido" multiple size="4">
+				<option>Por un amigo o conocido</option>
+				<option>Buscando en internet</option>
+				<option>Por casualidad</option>
+				<option>No te conocía</option>
+			</select></dd>
+      <dt>Sexo:</dt>
+      <dd><input type="radio" name="sexo" id="hombre" value="1" /><label for="hombre">Hombre</label></dd>
+      <dd><input type="radio" name="sexo" id="mujer" value="2" checked /><label for="mujer">Mujer</label></dd>
+      <dt>Aficiones:</dt>
+      <dd>
+        <input type="checkbox" name="paracaidismo" id="paracaidismo" /><label for="paracaidismo">Paracaidismo</label><br/>
+        <input type="checkbox" name="comer" id="comer" /><label for="comer">Comer</label><br/>
+        <input type="checkbox" name="correr" id="correr" /><label for="correr">Correr</label><br/>
+        <input type="checkbox" name="dormir" id="dormir" checked /><label for="dormir">Dormir</label><br/>
+      </dd>
+    </dl>
+    <input type="submit" value="Enviar datos" />
+    <input type="reset" value="Borrar todo">
+
+  </form>
+</body>
+
+</html>

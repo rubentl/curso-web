@@ -1,0 +1,27 @@
+/* css document */
+
+body{
+  background: url("../img/abstract-1500x1500-1.jpg") no-repeat;
+  color:      #fff;
+}
+
+img{
+  width:  20%;
+  margin: 20px;
+}
+
+p{
+  text-align: justify;
+}
+
+.flotaizda{
+  float: left;
+}
+
+.flotadcha{
+  float: right;
+}
+
+.centrar{
+  text-align: center;
+}

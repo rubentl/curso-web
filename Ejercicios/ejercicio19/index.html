@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/master.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 19</title>
+</head>
+<body>
+	<h1>Formulario de alta</h1>
+	<p>Por favor, rellene el siguiente formulario para darse de alta en nuestra web</p>
+	<form action="mensaje.html" name="formulario de contacto" method="post">
+	<table>
+		<tr>
+			<td>Nombre</td>
+			<td><input type="text" name="nombre" size="50" maxlength="50"/></td>
+		</tr>
+		<tr>
+			<td>Apellidos</td>
+			<td><input type="text" name="nombre" size="100" maxlength="100"/></td>
+		</tr>
+		<tr>
+			<td>Mail</td>
+			<td><input type="text" name="nombre" size="50" maxlength="50"/></td>
+		</tr>
+		<tr>
+			<td>Teléfono</td>
+			<td><input type="text" name="nombre" size="12" maxlength="12"/></td>
+		</tr>
+		<tr>
+			<td>Cómo nos conoció</td>
+			<td><select name="forma" size="5">
+				<option>Internet</option>
+				<option>Prensa</option>
+				<option>Televisión</option>
+				<option>Radio</option>
+				<option>Otros</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td>Con qué frecuencia nos visita</td>
+			<td><input type="radio" name="frecuencia" value="1"/>Mucho<br/>
+			<input type="radio" name="frecuencia" value="2">A menudo<br/>
+			<input type="radio" name="frecuencia" value="3">A veces<br/>
+			<input type="radio" name="frecuencia" value="4">Poco</td>
+		</tr>
+		<tr>
+			<td>Comentarios</td>
+			<td><textarea name="observaciones" rows="10" cols="50">Introduce tu consulta</textarea></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			<input type="submit" value="Enviar"/>
+			<input type="reset" value="Borrar formulario"/>
+			</td>
+		</tr>
+	</table>
+	</form>
+ </body>
+</html>

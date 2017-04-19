@@ -1,0 +1,120 @@
+/* CSS DOCUMENT */
+
+body{
+  box-sizing: border-box;
+  font-family: "Monaca for Powerline";
+}
+
+*,
+*:after,
+*:before{
+  box-sizing: inherit;
+}
+
+#contenedor{
+  width:  90%;
+  margin: 0 auto;
+  color:     #22631c;
+}
+
+header{
+  width: 100%;
+}
+
+#minimenu{
+  position: relative;
+  width:    30%;
+  float:    right;
+}
+
+#minimenu a{
+  text-decoration: none;
+  color:           black;
+}
+
+#minimenu a:hover{
+  font-weight: bold;
+}
+
+#migas{
+  border-top: 1px dotted black;
+  font-size:  .6em;
+}
+
+#menu{
+  width:           100%;
+  background:      url('../img/fondomenu.gif') no-repeat;
+  background-size: cover;
+  height:          70px;
+  display:         flex;
+  flex-flow:       row nowrap;
+  justify-content: space-around;
+  align-items:     center;
+}
+
+#menu a{
+  text-decoration: none;
+  color:           #22631c;
+  font-weight:     bold;
+}
+
+#menu a:hover{
+  color: #fff;
+}
+
+main{
+  width:           80%;
+  margin:          10px auto;
+  border:        2px solid #e8be54;
+  border-radius: 10px;
+  padding:       10px;
+  text-align: center;
+}
+
+form{
+  width: 50%;
+  margin: 10px auto;
+  border:        2px solid #e8be54;
+  border-radius: 10px;
+  padding: 10px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+form > *{
+  margin: 10px 0;
+}
+
+form label{
+  flex: 0 1 30%;
+  text-align: right;
+  margin-right: 10px;
+}
+form input,
+form textarea{
+  border: 1px solid #22631c;
+  border-radius: 3px;
+  flex: 0 1 40%;
+  text-align: left;
+}
+
+#enviar{
+  flex: 0 1 20%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+h2{
+  margin-top: 20px;
+  border-top: 1px solid #e8be54;
+  padding: 50px 0;
+}
+
+footer{
+  margin-top: 20px;
+  border-top: 2px solid #22631c;
+  font-size:  .8em;
+  text-align: center;
+}

@@ -1,0 +1,39 @@
+/* css document */
+
+body {
+    background-color: black;
+    color: darkred;
+    font-family: 'Trebuchet MS';
+}
+
+h1 {
+    font-size: 3em;
+    font-family: Courier New;
+    text-align: center;
+    color: indianred;
+    text-decoration: underline;
+}
+
+h2 {
+    color: yellow;
+    text-decoration: underline;
+    font-family: Courier New;
+    font-weight: lighter;
+}
+
+h3 {
+    color: white;
+    font-family: Courier New;
+    text-align: center;
+    font-size: 1em;
+}
+
+.resaltado {
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.masgrande {
+    font-size: 2em;
+}

@@ -1,0 +1,107 @@
+/* css document */
+
+body {
+    background-color: #67eaba;
+}
+
+hr {
+    background-color: white;
+    height: 8px;
+}
+
+h1 {
+    font-family: Monotype Corsiva;
+    font-size: 7ex;
+    text-align: center;
+}
+
+h2 {
+    font-family: Monotype Corsiva;
+    font-size: 4ex;
+    text-decoration: underline;
+}
+
+p {
+    text-align: justify;
+    font-size: 2ex;
+    color: mediumblue;
+    font-family: Verdana;
+}
+
+ul {
+    list-style: circle;
+    color: mediumblue;
+    font-family: Verdana;
+    font-size: 2ex;
+}
+
+ol {
+    list-style: upper-roman;
+    font-size: small;
+    font-family: Courier New;
+    font-style: italic;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+.super {
+    vertical-align: super;
+}
+
+.sub {
+    vertical-align: sub;
+}
+
+.teletipo {
+    font-family: Courier New;
+}
+
+div.formato1 {
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    padding: 5px;
+    width: 200px;
+    height: 80px;
+    border: 1px solid black;
+    font-size: 1.2em;
+    font-family: Verdana;
+}
+
+div.formato2 {
+    position: absolute;
+    top: 250px;
+    left: 1050px;
+    padding: 5px;
+    width: 180px;
+    height: 80px;
+    border: 1px solid black;
+    font-size: 1.2em;
+    font-family: Verdana;
+}
+
+div.formato3 {
+    position: absolute;
+    top: 30px;
+    left: 1000px;
+    padding: 5px;
+    width: 200px;
+    height: 80px;
+    border: 1px solid black;
+    font-size: 1.2em;
+    font-family: Verdana;
+}

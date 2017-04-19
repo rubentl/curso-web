@@ -1,0 +1,20 @@
+/* css document */
+
+body {
+    background-image: url("../img/fondomini.jpg");
+}
+
+h1 {
+    text-align: right;
+    color: #ffff00;
+    padding: 40px;
+    margin: 0px;
+}
+
+.parrafo1 {
+    text-align: justify;
+    padding: 20px 40px 60px 80px;
+    margin: 0px;
+}
+
+.parrafo2 {}

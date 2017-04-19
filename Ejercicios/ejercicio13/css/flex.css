@@ -1,0 +1,136 @@
+/* css document */
+
+
+/* Como main.css pero usando flex */
+
+body, html {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #666;
+    font-family: sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+#main {
+    background-color: #999;
+    border: 1px solid white;
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#izda {
+    flex: 0 1 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    border: 2px solid white;
+    background-color: #a06060;
+    padding: 5px 10px;
+}
+
+#dcha {
+    flex: 0 1 45%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid white;
+    background-color: #a66;
+    padding: 5px 10px;
+}
+
+#menu {
+    flex: 0 1 100%;
+    min-height: 10%;
+    margin: 10px auto;
+    border: 2px solid white;
+    background-color: #7a2323;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    flex: 0 1 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+}
+
+#menu a:hover {
+    color: black;
+    background-color: #a66;
+}
+
+#contenidoIzda {
+    flex: 0 1 45%;
+    border: 2px solid white;
+    padding: 9px;
+    background-color: #ffb4b4;
+}
+
+#contenidoIzda img {
+    float: left;
+    padding: 5px;
+    width: 45%;
+}
+
+#contenidoDcha {
+    flex: 0 1 45%;
+    border: 2px solid white;
+    padding: 9px;
+    background-color: #ffb4b4;
+}
+
+#contenidoDcha img {
+    float: right;
+    padding: 5px;
+    width: 45%;
+}
+
+#textoIzda {
+    flex: 0 1 30%;
+    border: 2px solid white;
+    background-color: #ffb4b4;
+}
+
+#textoDcha {
+    flex: 0 1 68%;
+    border: 2px solid white;
+    background-color: #ffb4b4;
+}
+
+#textoDcha img {
+    width: 30%;
+    float: right;
+    padding: 10px;
+}
+
+#textoIzda img {
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+
+#dcha p {
+    margin: 5px 10px;
+}

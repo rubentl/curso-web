@@ -1,0 +1,137 @@
+/* CSS DOCUMENT */
+
+body{
+  box-sizing: border-box;
+  font-family: "Monaca for Powerline";
+}
+
+*,
+*:after,
+*:before{
+  box-sizing: inherit;
+}
+
+#contenedor{
+  width:  90%;
+  margin: 0 auto;
+  color:     #22631c;
+}
+
+header{
+  width: 100%;
+}
+
+#minimenu{
+  position: relative;
+  width:    30%;
+  float:    right;
+}
+
+#minimenu a{
+  text-decoration: none;
+  color:           black;
+}
+
+#minimenu a:hover{
+  font-weight: bold;
+}
+
+#migas{
+  border-top: 1px dotted black;
+  font-size:  .6em;
+}
+
+#menu{
+  width:           100%;
+  background:      url('../img/fondomenu.gif') no-repeat;
+  background-size: cover;
+  height:          70px;
+  display:         flex;
+  flex-flow:       row nowrap;
+  justify-content: space-around;
+  align-items:     center;
+}
+
+#menu a{
+  text-decoration: none;
+  color:           #22631c;
+  font-weight:     bold;
+}
+
+#menu a:hover{
+  color: #fff;
+}
+
+main img{
+  width:         100%;
+  border-radius: 10px;
+}
+
+#cuerpo{
+  width:           100%;
+  margin:          10px auto;
+  display:         flex;
+  flex-flow:       row nowrap;
+  justify-content: space-between;
+  align-items:     stretch;
+}
+
+#izda{
+  flex:          0 1 60%;
+  margin-right:  10px;
+  border:        2px solid #e8be54;
+  border-radius: 10px;
+  padding:       10px;
+  overflow: hidden;
+}
+
+#izda h1{
+  font-size: 1.5em;
+}
+
+#dcha{
+  flex:          0 1 40%;
+  border:        2px solid #e8be54;
+  border-radius: 10px;
+  padding:       10px;
+}
+
+#dcha h2{
+  font-size:  1em;
+  text-align: center;
+}
+
+#dcha iframe{
+  margin: 0 50px;
+}
+
+#dcha p:last-child{
+  border-top:1px solid #e8be54;
+  text-align: center;
+}
+
+#imagenes{
+  margin-top:      70px;
+  display:         flex;
+  flex-flow:       row nowrap;
+  justify-content: space-around;
+  align-items:     center;
+}
+
+#imagenes img{
+  width:  120px;
+}
+
+#eltruli{
+  position: relative;
+  width: 150px;
+  float:left;
+  margin-right: 10px;
+}
+
+footer{
+  margin-top: 20px;
+  border-top: 2px solid #22631c;
+  font-size:  .8em;
+  text-align: center;
+}

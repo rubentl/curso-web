@@ -1,0 +1,23 @@
+/*CSS DOCUMENT*/
+
+body {
+    background-color: red;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.textoResaltado {
+    color: green;
+    font-family: Georgia;
+    font-size: 20px;
+}
+
+.pie {
+    color: yellow;
+    font-family: Courier;
+    font-weight: 200;
+    font-size: 50px;
+}

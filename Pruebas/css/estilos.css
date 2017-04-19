@@ -1,0 +1,24 @@
+/* css document */
+
+body {
+    background-color: #415a2e;
+}
+
+h1 {
+    font-family: Verdana;
+    color: white;
+}
+
+h2 {
+    color: yellow;
+}
+
+p {
+    font-family: Arial;
+    color: green;
+}
+
+.cambiacolor{
+    color:white;
+    font-family: Courier;
+}

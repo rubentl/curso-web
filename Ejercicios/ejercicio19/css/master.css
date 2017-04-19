@@ -1,0 +1,29 @@
+/* CSS DOCUMENT */
+
+body{
+	background-color: #ccc;
+	padding: 10px 40px;
+	color:#fff;
+	background-color: #ada93a;
+}
+
+h1{
+	text-align: center;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 10px;
+}
+
+table{
+	border-collapse: collapse;
+	border: 1px solid #ddb954;
+	margin: 10px auto;
+	width: 100%;
+}
+
+table tr:last-child{
+	text-align:center;
+}
+
+td{
+	 border: 1px solid #ddb954;
+}

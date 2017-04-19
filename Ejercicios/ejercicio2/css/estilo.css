@@ -1,0 +1,56 @@
+/* css document */
+
+body {
+    background-color: lightblue;
+}
+
+h1,
+h2,
+.ficha {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: Monotype Corsiva;
+}
+
+.ficha {
+    font-family: Georgia;
+    color: white;
+}
+
+.dcha {
+    color: mediumblue;
+}
+
+.parra1,
+.parra2 {
+    font-family: Verdana;
+}
+
+.parra1 {
+    color: darkred;
+}
+
+.parra2 {
+    color: yellowgreen;
+}
+
+.parra3 {
+    color: green;
+    font-family: Comic Sans MS;
+}
+
+.barrera {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.cursiva {
+    font-style: italic;
+}

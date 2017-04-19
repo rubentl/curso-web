@@ -1,0 +1,87 @@
+/*css document*/
+
+body {
+    color: white;
+    background-color: black;
+    font-family: arial;
+    padding: 10px 20px;
+}
+
+h1 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2.5em;
+    font-style: italic;
+}
+
+hr{
+    color:red;
+    background-color: red;
+    height: 8px;
+}
+
+.izda {
+    width: 20%;
+    float: left;
+}
+
+.dcha{
+    width: 15%;
+    float: right;
+    margin-top: 10px;
+}
+.dcha2{
+    width: 30%;
+    float: right;
+}
+
+h2 {
+    text-align:     center;
+    font-style:     italic;
+    margin: 0 30%;
+    border-bottom:  1px solid white;
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.biblio{
+    text-decoration: none;
+    padding-bottom: 0;
+    padding-bottom: 7px;
+    border-bottom: 1px solid white;
+    width: 20%;
+    margin-left: 30%;
+    margin-right: auto;
+}
+
+.sintop{
+    margin-top:5px;
+}
+
+ul{
+    width: 30%;
+}
+li{
+    padding-bottom: 20px;
+}
+
+.rojo{
+    color:red;
+}
+
+.rojosubraya{
+    color:red;
+    text-decoration: underline;
+}
+
+.raya{
+  position:absolute;
+  background-color: white;
+  padding: 0;
+  width: 100vw;
+  top: 759;
+  left:0;
+  height: 3px;
+
+}

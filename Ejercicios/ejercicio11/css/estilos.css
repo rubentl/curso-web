@@ -1,0 +1,51 @@
+/*css document*/
+
+body{
+  background: url("../img/fondo.jpg");
+  padding: 10px 30px;
+  font-family: sans-serif;
+}
+
+h1{
+  font-family: monotype corsiva;
+  font-size: 2.5em;
+  color:#0001a3;
+  border-bottom: 3px solid #822222;
+  text-align: center;
+  width: 50%;
+  padding: 10px 60px;
+  margin: auto;
+}
+
+h2 {
+  font-family: Times New Roman;
+  font-style: italic;
+  font-weight: normal;
+  text-decoration: underline;
+  color: #69744a;
+  margin-top: 10%;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+img{
+  border: 1px solid black;
+}
+
+ul{
+  margin-left: 10%;
+}
+
+.izda{
+  float:left;
+}
+.dcha{
+  float: right;
+  margin-right: 10%;
+}
+
+.enverde{
+  color: green;
+  font-style: italic;
+  font-weight: bold;
+}

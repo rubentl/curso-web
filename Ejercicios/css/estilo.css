@@ -1,0 +1,65 @@
+/*css document*/
+
+body {
+    padding: 5%;
+    box-sizing: border-box;
+    font-family: Monaco for powerline, sans-serif;
+    background-color: #bcd6cc;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 50vw;
+    min-height: 70vh;
+    margin: auto;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+nav ul {
+    flex: 1 1 auto;
+    padding: 0;
+    margin: 0;
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 20%;
+    background-color: #2d8190;
+    margin: 5px;
+    -webkit-box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.65);
+    box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.65);
+}
+
+nav li:hover {
+    background-color: #4da1b0;
+    border: 2px solid #1b5775;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: #2d8190;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.30);
+}

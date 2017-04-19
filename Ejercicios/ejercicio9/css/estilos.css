@@ -1,0 +1,64 @@
+/*css document*/
+
+body {
+    background: url("../img/onda_azul.gif");
+    border-top: 5px solid blue;
+    border-bottom: 5px solid blue;
+    color: #3b6f04;
+    font-family: verdana;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+h2 {
+    font-size: 1em;
+    margin: 0 20%;
+    text-align: center;
+}
+
+li {
+    text-decoration: none;
+}
+
+img {
+    width: 60%;
+    padding-right: 250px;
+}
+
+ul {
+    list-style: none;
+    margin: 30 20%;
+}
+
+li {
+    text-align: center;
+}
+
+.flotaizda {
+    float: left;
+}
+
+a{
+    text-decoration: none;
+    color: #3b6f04;
+}
+
+a:hover{
+    font-size: 1.2em;
+    color: black;
+}
+
+a:active{
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+a:visited{
+  color: yellow;
+}
