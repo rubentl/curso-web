@@ -180,6 +180,7 @@ footer {
   padding: 0;
 }
 
-.versiones {
+.versiones img{
   margin: 0 5px;
+  width: 95%;
 }

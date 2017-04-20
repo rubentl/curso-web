@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/master.css">
+  <title>Formulario de Alta</title>
+</head>
+
+<body>
+  <header>
+    <h1>Formulario de alta</h1>
+  </header>
+  <main>
+    <form action="alta.html" method="post">
+      <div class="grupo">
+        <div class="titulo">Nombre y apellidos *</div>
+        <div class="nombre">
+          <div>
+            <input type="text" name="nombre" size="20" id="nombre"><br/>
+            <label for="nombre">Nombre</label>
+          </div>
+          <div>
+            <input type="text" name="apellido1" size="50" id="apellido1"><br/>
+            <label for="apellido1">Primer apellido</label>
+          </div>
+          <div>
+            <input type="text" name="apellido2" size="50" id="apellido2"><br/>
+            <label for="apellido2">Segundo apellido</label>
+          </div>
+        </div>
+      </div>
+      <div class="grupo">
+        <div class="titulo">Dirección *</div>
+        <div class="direccion">
+          <div>
+            <input type="text" name="calle" size="50" id="calle"><br/>
+            <label for="calle">Calle, número, piso, puerta</label>
+          </div>
+          <div class="campo">
+            <input type="text" name="codigo" size="10" id="codigo"><br/>
+            <label for="codigo">Código postal</label>
+          </div>
+          <div class="campo">
+            <input type="text" name="municipio" size="20" id="municipio"><br/>
+            <label for="municipio">Municipio</label>
+          </div>
+          <div class="campo">
+            <select name="provincia" id="provincia">
+              <option>Asturias</option>
+              <option>Cantabria</option>
+              <option>Extremadura</option>
+              <option>Melilla</option>
+            </select><br/>
+            <label for="provincia">Provincia</label>
+          </div>
+          <div class="campo">
+            <select name="pais" id="pais">
+              <option>España</option>
+              <option>Francia</option>
+              <option>Alemania</option>
+              <option>Italia</option>
+            </select><br/>
+            <label for="pais">País</label>
+          </div>
+        </div>
+      </div>
+      <div class="grupo">
+        <div class="titulo"><label for="email">Email</label></div>
+        <div class="email">
+          <input type="text" name="email" size="50" id="email">
+        </div>
+      </div>
+      <div class="grupo">
+        <div class="titulo">Teléfono *</div>
+        <div class="telefono">
+          <div class="campo">
+            <input type="text" name="fijo" size="30" id="fijo"><br/>
+            <label for="fijo">Fijo</label>
+          </div>
+          <div class="campo">
+            <input type="text" name="movil" size="30" id="movil"><br/>
+            <label for="movil">Móvil</label>
+          </div>
+        </div>
+      </div>
+      <div class="boton">
+        <input type="submit" value="Darme de alta ->">
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>

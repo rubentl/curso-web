@@ -1,0 +1,79 @@
+/* css document */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:afer, *:before {
+  box-sizing: inherit;
+}
+
+body{
+  padding: 0 20px;
+}
+
+main{
+  width: 60%;
+}
+
+.grupo{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.titulo{
+  flex: 0 1 25%;
+}
+
+.nombre, .direccion, .email, .telefono{
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.nombre{
+  flex: 0 1 65%;
+  min-height: 150px;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.email{
+  flex: 0 1 65%;
+    align-items: flex-start;
+}
+
+.direccion{
+  flex: 0 1 65%;
+  min-height: 150px;
+  align-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.telefono{
+  flex: 0 1 75%;
+}
+
+ .campo{
+   width: 43%;
+ }
+
+ .boton{
+   width: 100%;
+   padding-top: 15px;
+   text-align: right;
+   border-top: 2px solid #aaa;
+ }
+
+ .boton input{
+   height: 30px;
+ }
+
+ input, select{
+   border: 1px solid #e09b34;
+   border-radius: 5px;
+   background-color: #e09b34;
+   padding: 3px;
+   color: white;
+   font-size: 1.1em;
+ }
