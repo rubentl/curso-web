@@ -11,6 +11,7 @@ html {
 body {
   width: 90vw;
   margin: 20px auto;
+  font-family: sans-serif;
 }
 
 header, main, article, aside {
@@ -34,14 +35,14 @@ main {
 }
 
 article {
-  width: 60%;
+  width: 65%;
   flex-flow: row wrap;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
 
 aside {
-  width: 30%;
+  width: 33%;
   flex-flow: row wrap;
   justify-content: space-between;
   align-content: flex-start;
@@ -106,7 +107,8 @@ input[type=submit] {
 }
 
 .tableta {
-  width: 80%;
+  width: 70%;
+  margin: 0 15%;
 }
 
 .negrita {
@@ -159,11 +161,22 @@ footer {
 .enlaces a {
   text-decoration: none;
   color: #999;
+  padding: 5px;
+}
+
+.enlaces a:hover{
+  color: white;
+  background-color: #555;
 }
 
 .enlaces ul {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+.enlaces li{
+  margin: 15px 0;
   padding: 0;
 }
 
