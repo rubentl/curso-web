@@ -9,7 +9,8 @@
 
 <body>
   <div id="contenedor">
-    <div id="cabecera"></div>
+    <div id="cabecera">
+    </div>
     <div id="menuhorizontal">
       <ul>
         <li><a href="#">Opción 1</a>
@@ -73,7 +74,8 @@
       <div id="central">
         <h1>Formulario de registro</h1>
         <form action="formulario.html" method="post">
-          <h2>¿Quién eres?</h2>
+          <fieldset>
+          <legend>¿Quién eres?</legend>
           <p>
             <label for="nombre">Nombre</label><br/>
             <input type="text" name="nombre" id="nombre" size="40">
@@ -123,7 +125,7 @@
                 <option >31</option>
               </select>
             <select name="mes">
-                <option value="0">Mes</option>
+                <option selected >Mes</option>
                 <option >1</option>
                 <option >2</option>
                 <option >3</option>
@@ -177,7 +179,9 @@
                 <option >2015</option>
               </select>
           </p>
-          <h2>¿De dónde eres?</h2>
+        </fieldset>
+        <fieldset>
+          <legend>¿De dónde eres?</legend>
           <p><label for="ciudad">Ciudad</label><br/>
             <input type="text" name="ciudad" id="ciudad" size="40">
           </p>
@@ -195,7 +199,9 @@
                 <option>Andorra</option>
               </select>
           </p>
-          <h2>¿Cómo quieres iniciar sesión?</h2>
+        </fieldset>
+        <fieldset>
+          <legend>¿Cómo quieres iniciar sesión?</legend>
           <p>
             <label for="usuario">Nombre de usuario</label><br/>
             <input type="text" name="usuario" id="usuario" size="40">
@@ -208,7 +214,9 @@
             <label for="clave2">Vuelve a escribir la contraseña</label><br/>
             <input type="password" name="clave2" id="clave2" size="40">
           </p>
-          <h2>Condiciones de registro</h2>
+        </fieldset>
+        <fieldset>
+            <legend>Condiciones de registro</legend>
           <p>Deseo recibir ofertar de iDESWEB<br/>
             <input type="radio" name="al_dia" id="a_dia" value="1">
             <label for="al_dia">Una vez al día</label>
@@ -220,6 +228,7 @@
           <p><input type="checkbox" name="acuerdo" id="acuerdo">
             <label for="acuerdo">Acepto el acuerdo de servicios, la declaración de privacidad y la declaración de uso de cookies</label>
           </p>
+        </fieldset>
           <p class="crearcuenta"><input type="submit" name="enviar" value="Crear cuenta"></p>
         </form>
       </div>

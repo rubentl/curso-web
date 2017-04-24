@@ -208,3 +208,8 @@ li ul {
   font-size: 1.3em;
   height: 40px;
 }
+
+fieldset{
+    border-radius:10px;
+    text-align: center;
+}

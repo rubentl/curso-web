@@ -1,0 +1,49 @@
+/* css document */
+
+body{
+  background-color: #ccc;
+}
+
+h1{
+  width: 100%;
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+input{
+  font-family: "Monaco for Powerline";
+  color: green;
+  font-size: 1.05em;
+  border-radius: 5px;
+}
+
+fieldset{
+  width: 50%;
+  margin: 30px auto;
+  border-color: blue;
+  border-radius: 10px;
+  color: blue;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0, 0.8);
+}
+
+fieldset p{
+  text-align: center;
+}
+
+input:hover{
+    background-color: #000;
+    color: #fff;
+    border-color:yellow;
+}
+
+input:focus{
+    background-color: yellow;
+    border:2px solid black;
+}
+
+legend{
+    font-family: verdana;
+    text-decoration: underline;
+    color:white;
+}
