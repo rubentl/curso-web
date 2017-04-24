@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Ejercicio 22</title>
+</head>
+
+<body>
+  <div id="contenedor">
+    <div id="cabecera"></div>
+    <div id="menuhorizontal">
+      <ul>
+        <li><a href="#">Opción 1</a>
+          <ul>
+            <li><a href="#">opción 1</a></li>
+            <li><a href="#">opción 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Opción 2</a>
+          <ul>
+            <li><a href="#">opción 1</a></li>
+            <li><a href="#">opción 2</a></li>
+            <li><a href="#">opción 3</a></li>
+            <li><a href="#">opción 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Opción 3</a></li>
+        <li><a href="#">Opción 4</a>
+          <ul>
+            <li><a href="#">opción 1</a></li>
+            <li><a href="#">opción 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Opción 5</a>
+          <ul>
+            <li><a href="#">opción 1</a></li>
+            <li><a href="#">opción 2</a></li>
+            <li><a href="#">opción 3</a></li>
+            <li><a href="#">opción 4</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="principal">
+      <div id="menuvertical">
+        <ul>
+          <li><a href="#">Opción V1</a>
+            <ul>
+              <li><a href="#">opción 1</a></li>
+              <li><a href="#">opción 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Opción V2</a>
+            <ul>
+              <li><a href="#">opción 1</a></li>
+              <li><a href="#">opción 2</a></li>
+              <li><a href="#">opción 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Opción V3</a>
+            <ul>
+              <li><a href="#">opción 1</a></li>
+              <li><a href="#">opción 2</a></li>
+              <li><a href="#">opción 3</a></li>
+              <li><a href="#">opción 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Opción V4</a></li>
+        </ul>
+      </div>
+      <div id="central">
+        <h1>Formulario de registro</h1>
+        <form action="formulario.html" method="post">
+          <h2>¿Quién eres?</h2>
+          <p>
+            <label for="nombre">Nombre</label><br/>
+            <input type="text" name="nombre" id="nombre" size="40">
+          </p>
+          <p>
+            <label for="apellidos">Apellidos</label><br/>
+            <input type="text" name="apellidos" id="apellidos" size="40">
+          </p>
+          <p>
+            <label for="correo">Correo electrónico</label><br/>
+            <input type="text" name="correo" id="correo" size="40">
+          </p>
+          <p>
+            <label for="dia">Fecha de nacimiento</label><br/>
+            <select name="dia" id="dia">
+                <option value="0">Día</option>
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >5</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+                <option >11</option>
+                <option >12</option>
+                <option >13</option>
+                <option >14</option>
+                <option >15</option>
+                <option >16</option>
+                <option >17</option>
+                <option >18</option>
+                <option >19</option>
+                <option >20</option>
+                <option >21</option>
+                <option >22</option>
+                <option >23</option>
+                <option >24</option>
+                <option >25</option>
+                <option >26</option>
+                <option >27</option>
+                <option >28</option>
+                <option >29</option>
+                <option >30</option>
+                <option >31</option>
+              </select>
+            <select name="mes">
+                <option value="0">Mes</option>
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+                <option >5</option>
+                <option >6</option>
+                <option >7</option>
+                <option >8</option>
+                <option >9</option>
+                <option >10</option>
+                <option >11</option>
+                <option >12</option>
+              </select>
+            <select name="ano">
+                <option value="0">Año</option>
+                <option >1980</option>
+                <option >1981</option>
+                <option >1982</option>
+                <option >1983</option>
+                <option >1984</option>
+                <option >1985</option>
+                <option >1986</option>
+                <option >1987</option>
+                <option >1988</option>
+                <option >1989</option>
+                <option >1990</option>
+                <option >1991</option>
+                <option >1992</option>
+                <option >1993</option>
+                <option >1994</option>
+                <option >1995</option>
+                <option >1996</option>
+                <option >1997</option>
+                <option >1998</option>
+                <option >1999</option>
+                <option >2000</option>
+                <option >2001</option>
+                <option >2002</option>
+                <option >2003</option>
+                <option >2004</option>
+                <option >2005</option>
+                <option >2006</option>
+                <option >2007</option>
+                <option >2008</option>
+                <option >2009</option>
+                <option >2010</option>
+                <option >2011</option>
+                <option >2012</option>
+                <option >2013</option>
+                <option >2014</option>
+                <option >2015</option>
+              </select>
+          </p>
+          <h2>¿De dónde eres?</h2>
+          <p><label for="ciudad">Ciudad</label><br/>
+            <input type="text" name="ciudad" id="ciudad" size="40">
+          </p>
+          <p>
+            <label for="codigo">Código postal</label><br/>
+            <input type="text" name="codigo" id="codigo" size="40">
+          </p>
+          <p>
+            <label for="pais">País</label><br/>
+            <select name="pais" id="pais">
+                <option>España</option>
+                <option>Sudáfrica</option>
+                <option>Nueva Guinea</option>
+                <option>Canadá</option>
+                <option>Andorra</option>
+              </select>
+          </p>
+          <h2>¿Cómo quieres iniciar sesión?</h2>
+          <p>
+            <label for="usuario">Nombre de usuario</label><br/>
+            <input type="text" name="usuario" id="usuario" size="40">
+          </p>
+          <p>
+            <label for="clave">Contraseña</label><br/>
+            <input type="password" name="clave" id="clave" size="40">
+          </p>
+          <p>
+            <label for="clave2">Vuelve a escribir la contraseña</label><br/>
+            <input type="password" name="clave2" id="clave2" size="40">
+          </p>
+          <h2>Condiciones de registro</h2>
+          <p>Deseo recibir ofertar de iDESWEB<br/>
+            <input type="radio" name="al_dia" id="a_dia" value="1">
+            <label for="al_dia">Una vez al día</label>
+            <input type="radio" name="a_la_semana" id="a_la_semana" value="2">
+            <label for="a_la_semana">Una vez por semana</label>
+            <input type="radio" name="al_mes" id="al_mes" value="3">
+            <label for="al_mes">Una vez al mes</label>
+          </p>
+          <p><input type="checkbox" name="acuerdo" id="acuerdo">
+            <label for="acuerdo">Acepto el acuerdo de servicios, la declaración de privacidad y la declaración de uso de cookies</label>
+          </p>
+          <p class="crearcuenta"><input type="submit" name="enviar" value="Crear cuenta"></p>
+        </form>
+      </div>
+      <div id="lateral">
+        <img src="http://lorempixel.com/150/100/nature/1" alt="naturaleza">
+        <img src="http://lorempixel.com/150/100/nature/2" alt="naturaleza 2">
+        <img src="http://lorempixel.com/150/100/nature/3" alt="naturaleza 3">
+      </div>
+    </div>
+    <div id="pie">
+      <div class="primera"></div>
+      <div class="segunda">
+        <p>todos los derechos permitidos</p>
+      </div>
+      <div class="tercera"></div>
+    </div>
+  </div>
+</body>
+
+</html>

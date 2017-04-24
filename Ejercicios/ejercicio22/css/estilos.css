@@ -1,0 +1,210 @@
+/* css document */
+
+body{
+  background-color: #777;
+}
+
+#contenedor{
+  background-color: #bcd656;
+  width: 90%;
+  margin: 40px auto;
+  border: 2px solid #466c00;
+}
+
+#cabecera{
+  width: 100%;
+  height: 100px;
+  background-color: #b8bd5a;
+  border-bottom: 2px solid #466c00;
+}
+
+#menuhorizontal{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #bcd656;
+  border-bottom: 2px solid #466c00;
+  height: 40px;
+}
+
+ul{
+  list-style: none;
+  margin: 0 ;
+  padding: 0;
+}
+
+#menuhorizontal ul{
+  margin-left: 17%;
+}
+
+#menuhorizontal ul li {
+  position: relative;
+  margin: 0;
+  width: 150px;
+  float: left;
+}
+
+#menuhorizontal > ul > li{
+  border-right: 1px solid #466c00;
+}
+
+#menuhorizontal > ul > li:first-child{
+  border-left: 1px solid #466c00;
+}
+
+#menuhorizontal ul li ul li{
+  border-bottom: 1px solid #466c00;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  background-color: #bcd656;
+  padding: 10px;
+  text-align: center;
+  display: block;
+}
+
+a:hover {
+  color: white;
+}
+
+li ul {
+  display: none;
+  z-index: 99;
+}
+
+#menuhorizontal li:hover ul li a{
+  background-color: #7dbd10;
+}
+
+#menuhorizontal li:hover ul {
+  display: block;
+  margin: 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index:99;
+  box-shadow: 1px 1px 5px 3px rgba(0,0,0, 0.8);
+}
+
+#menuvertical{
+  position: relative;
+  width: 13%;
+  padding: 0;
+  margin: 0;
+  float:left;
+  background-color: #bcd656;
+  border-bottom: 2px solid #466c00;
+  border-right: 2px solid #466c00;
+}
+
+#menuvertical li {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  border-bottom: 1px solid #466c00;
+}
+
+#menuvertical li:hover ul li a{
+  background-color: #7dbd10;
+}
+
+#menuvertical > ul > li:last-child{
+  border:none;
+}
+
+#menuvertical ul li:hover ul li{
+  width: 100px;
+}
+
+#menuvertical ul li:hover ul {
+  display: block;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 156px;
+  box-shadow: 1px 1px 5px 3px rgba(0,0,0, 0.8);
+}
+
+#principal{
+  overflow: hidden;
+  background-color: #6a833c;
+  color: white;
+}
+
+#central{
+  position: relative;
+  width: 70%;
+  padding: 10px;
+  float: left;
+  z-index: 0;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.izda{
+  position: relative;
+  width: 40%;
+  float: left;
+  margin: 10px 5%;
+}
+
+.dcha{
+  position: relative;
+  width: 40%;
+  float: left;
+  margin: 10px 5%;
+}
+
+#lateral{
+  position: relative;
+  width: 15%;
+  float: right;
+  text-align: center;
+}
+
+#lateral img{
+  margin: 30px auto;
+  box-shadow: 1px 1px 5px 3px rgba(0,0,0, 0.8);
+}
+
+#pie{
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #466c00;
+  overflow: hidden;
+  height: 50px;
+}
+
+.primera{
+  position: relative;
+  width: 30%;
+  float:left;
+  height: 100%;
+  background-color: rgba(93, 163, 98, 0.34);
+}
+
+.segunda{
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  background-color: rgba(93, 163, 98, 0.34);
+}
+
+.tercera{
+  position: relative;
+  width: 30%;
+  float: right;
+  height: 100%;
+  background-color: rgba(93, 163, 98, 0.34);
+}
+
+.crearcuenta{
+  text-align: center;
+}
+
+.crearcuenta input{
+  font-size: 1.3em;
+  height: 40px;
+}

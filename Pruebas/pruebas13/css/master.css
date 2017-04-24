@@ -1,0 +1,62 @@
+/* css document */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #ccc;
+  padding: 20px 40px;
+  font-size: 0.9em;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 2px solid white;
+  letter-spacing: .2em;
+}
+
+#menu, #menu ul {
+  list-style: none;
+}
+
+#menu {
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  position: relative;
+  margin: 10px;
+  width: 180px;
+  float: left;
+}
+
+#menu a {
+  text-decoration: none;
+  color: black;
+  background-color: #0af;
+  padding: 10px;
+  text-align: center;
+  display: block;
+}
+
+#menu a:hover {
+  color: white;
+}
+
+#menu li ul {
+  display: none;
+}
+
+#menu li:hover ul {
+  display: block;
+  margin: 0;
+  position: absolute;
+  top: 35px;
+  left: -50px;
+}
