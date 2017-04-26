@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/s3Slidercss.css">
+  <title>Ejercicio 24</title>
+    <!-- JavaScripts-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/s3Slider.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#slider1').s3Slider({
+                timeOut: 4000 
+            });
+        });
+    </script>
+</head>
+<body>
+ <div id="slider1">
+        <ul id="slider1Content">
+            <li class="slider1Image">
+                <a href=""><img src="images/img-1.jpg" alt="1" /></a>
+                <span class="left"><strong>El deporte</strong><br />Cansa mucho ...</span></li>
+            <li class="slider1Image">
+                <a href=""><img src="images/img-2.jpg" alt="2" /></a>
+                <span class="right"><strong>El deporte</strong><br />Es mega divertido ...</span></li>
+            <li class="slider1Image">
+                <img src="images/img-3.jpg" alt="3" />
+                <span class="right"><strong>Mi abuela</strong><br />Practicaba mucho deporte</span></li>
+            <li class="slider1Image">
+                <img src="images/img-4.jpg" alt="4" />
+                <span class="left"><strong>Mi padre</strong><br />No sabía jugar al padel, pero jugaba bien a los bolos.</span></li>
+            <li class="slider1Image">
+                <img src="images/img-5.jpg" alt="5" />
+                <span class="right"><strong>¡Viva el deporte!</strong><br />Tenis<br/>Baloncesto<br/>...</span></li>
+            <div class="clear slider1Image"></div>
+        </ul>
+    </div>
+</body>
+</html>

@@ -65,3 +65,15 @@ nav a:hover {
     -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.30);
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.30);
 }
+
+.emergente{
+    display:none;
+}
+
+nav li:hover .emergente{
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+    width: 300px;
+}
