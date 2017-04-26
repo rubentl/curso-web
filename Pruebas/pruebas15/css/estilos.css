@@ -1,0 +1,18 @@
+/* css document */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#ccc;
+}
+
+.centrada{
+    position:relative;
+    width:20%;
+    margin: 0 auto;
+    text-align:center;
+}
+
+.centrada img{
+    width: 100%;
+}
