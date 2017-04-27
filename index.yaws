@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios del curso</title>
+</head>
+<body>
+    
+<erl>
+out(A) ->
+    {redirect, "Ejercicios/index.html"}.
+</erl>
+
+</body>
+</html>
