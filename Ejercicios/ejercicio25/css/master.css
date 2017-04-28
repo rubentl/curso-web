@@ -1,0 +1,97 @@
+/* css document */
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color:black;
+    color:white;
+    font-family: verdana;
+}
+
+header{
+    width:100%;
+    background-color:#ddd;
+    border-bottom:1px solid black;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.logo{
+    width:150px;
+    margin: 20px;
+}
+
+svg{
+    width: 300px;
+}
+
+nav{
+    width:100%;
+    background-color:#bbb;
+    border-bottom:1px solid black;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style:none;
+    display:flex;
+    justify-content:center;
+}
+
+nav li{
+    padding: 0;
+    margin: 5px;
+}
+
+nav a{
+    display:block;
+    padding: 10px;
+    color:white;
+    text-decoration:none;
+    border: 1px solid black;
+}
+
+nav a:hover{
+    color:black;
+    background-color: #ddd;
+}
+
+main{
+    width:100%;
+    padding: 30px 0;
+    background-color:#999;
+    border-bottom:1px solid white;
+}
+.container{
+    margin-bottom: 20px !important;
+    width: 60% !important;
+}
+
+section{
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-start;
+}
+
+article{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content:center;
+    align-items:center;
+}
+
+article img,
+article p{
+    width: 80%;
+    text-align:justify;
+}
+
+footer{
+    background-color:#777;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+

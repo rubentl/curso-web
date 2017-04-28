@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Prueba 17 para el blueberry</title>
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- <link rel="stylesheet" href="css/example.css"> -->
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/diseno.css">
+</head>
+<body>
+
+    <h1>Otro Slider: el blueberry</h1>
+    
+  <div class="container">
+    <div id="slides">
+      <img src="images/img-1.jpg" alt="imagen-1">
+      <img src="images/img-2.jpg" alt="imagen-2">
+      <img src="images/img-3.jpg" alt="imagen-3">
+      <img src="images/img-4.jpg" alt="imagen-4">
+    </div>
+  </div>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+	<script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 500,
+        height: 250,
+        play: {
+          active: true,
+          auto: true,
+          interval: 6000,
+          swap: true,
+          effect: "fade"
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
