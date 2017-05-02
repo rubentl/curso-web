@@ -1,0 +1,174 @@
+/* css document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding-top:20px;
+    background-color:white;
+    color: black;
+    font-family:Arial, sans-serif;
+}
+
+#cabecera{
+    width:100%;
+    height:60px;
+    border-top: 2px solid #777;
+    overflow:hidden;
+}
+
+.logo{
+    position:relative;
+    float:left;
+    margin-left:5%;
+    margin-top: -1px;
+}
+
+#menu{
+    position:relative;
+    float:right;
+    margin-right: 5%;
+    overflow: hidden;
+}
+
+#menu ul{
+    list-style:none;
+}
+
+#menu li{
+    position:relative;
+    float:left;
+}
+
+#menu a{
+    display:block;
+    padding: 10px;
+    color:black;
+    text-decoration:none;
+    padding-top: 20px;
+    border-top:2px solid transparent;
+}
+
+#menu a:hover{
+    border-top:2px solid black;
+}
+
+#portada{
+    clear:both;
+    width:100%;
+}
+
+#titulo{
+    width:100%;
+}
+
+h1{
+    text-align:center;
+    padding-top: 20px;
+}
+
+.subrayado{
+    height:2px;
+    margin: 10px auto;
+    width:250px;
+    background-color:black;
+}
+
+#presentacion{
+    width:90%;
+    margin: 20px auto;
+    overflow:hidden;
+}
+
+.negrita{
+    font-weight:bold;
+}
+
+.parrafo{
+    position:relative;
+    width:33%;
+    float:left;
+    overflow:hidden;
+}
+
+.izda{
+    position:relative;
+    width:15%;
+    float:left;
+}
+
+.dcha{
+    position:relative;
+    width:85%;
+    float:right;
+}
+
+#pie{
+    width:100%;
+    background-color:#2e2f31;
+    color:white;
+    overflow:hidden;
+    padding:20px 0;
+}
+
+#pie p{
+    margin-bottom: 6px;
+}
+
+#pie h2{
+    margin-bottom: 15px;
+}
+
+.pies-1, .pies-2{
+    position:relative;
+    width: 25%;
+    float:left;
+}
+
+.pies-1{
+    margin-left: 5%;
+}
+
+.pies-3{
+    position:relative;
+    width: 40%;
+    float:left;
+}
+
+.correos{
+    text-decoration:none;
+    color:green;
+}
+
+#sociales{
+    width:100%;
+    background-color:#222;
+    overflow:hidden;
+}
+
+.redes-header{
+    margin-right:10%;
+    margin-bottom:2%;
+}
+
+#volver{
+    position:fixed;
+    bottom:60px;
+    right:5px;
+    background-color:#114913;
+    border:1px solid #114913;
+    border-radius:10px;
+    z-index: 1000;
+}
+
+#volver a{
+    font-weight:bold;
+    font-size:2em;
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding: 5px 10px 0 10px;
+}
+

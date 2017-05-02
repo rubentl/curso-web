@@ -10,7 +10,7 @@ body{
 
 header{
     width:100%;
-    background-color:#ddd;
+    background-color:#777;
     border-bottom:1px solid black;
     display: flex;
     justify-content:space-around;
@@ -67,6 +67,9 @@ main{
 .container{
     margin-bottom: 20px !important;
     width: 60% !important;
+    padding: 5px;
+    border:2px double black;
+    animation-duration: 5s !important;
 }
 
 section{
@@ -76,6 +79,9 @@ section{
 }
 
 article{
+    padding: 5px;
+    border:1px solid black;
+    margin: 3px;
     display:flex;
     flex-flow: column nowrap;
     justify-content:center;
