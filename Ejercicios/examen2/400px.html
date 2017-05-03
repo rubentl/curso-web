@@ -2,51 +2,31 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/master.css">
-  <link rel="stylesheet" href="css/diseno.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/redes.css">
+  <link rel="stylesheet" href="css/400px.css">
   <title>Examen</title>
 </head>
 <body id="inicio">
+    <div id="contenedor">
     <div id="cabecera">
-      <div class="logo">
-          <img src="img/logo.jpg" alt="Robeyan Carpinteros">
-      </div>
       <div id="menu">
-        <ul>
-          <li><a href="#">INICIO</a></li>
-          <li><a href="#">PUERTAS</a></li>
-          <li><a href="#">ARMARIOS</a></li>
-          <li><a href="#">COCINAS</a></li>
-          <li><a href="#">SUELOS</a></li>
-          <li><a href="#">CARPINTERÍA</a></li>
-          <li><a href="#">CONTACTO</a></li>
+        <div class="menuicono">
+            <a href="#menuopciones">
+                <img src="img/menuicon.png" alt="menu principal">
+            </a>
+        </div>
+        <ul id="menuopciones">
+            <li><a href="#inicio">INICIO <span class="aladcha">&gt;</span></a></li>
+          <li><a href="#inicio">PUERTAS <span class="aladcha">&gt;</span></a></li>
+          <li><a href="#inicio">ARMARIOS <span class="aladcha">&gt;</span></a></li>
+          <li><a href="#inicio">COCINAS <span class="aladcha">&gt;</span></a></li>
+          <li><a href="#inicio">SUELOS <span class="aladcha">&gt;</span></a></li>
+          <li><a href="#inicio">CARPINTERÍA <span class="aladcha">&gt;</span></a></li>
+          <li><a href="#inicio">CONTACTO <span class="aladcha">&gt;</span></a></li>
         </ul>
       </div>
-      <div id="dispositivos">
-          <ul>
-        <li><a href="index.html"><img src="img/iconos/sobremesa.png" alt="para sobremesa"></a></li>
-        <li><a href="800px.html"><img src="img/iconos/tableta.png" alt="para tableta"></a></li>
-        <li><a href="400px.html"><img src="img/iconos/movil.png" alt="para móvil"></a></li>
-          </ul>
+       <div class="logo">
+          <img src="img/logo.jpg" alt="Robeyan Carpinteros">
       </div>
-    </div>
-    <div id="portada">
-        <div id="slides">
-          <img src="img/portada_m/0.jpg" alt="bosque">
-          <img src="img/portada_m/1.jpg" alt="cocina">
-          <img src="img/portada_m/2.jpg" alt="escaleras">
-          <img src="img/portada_m/3.jpg" alt="cajones">
-          <img src="img/portada_m/4.jpg" alt="escaparate">
-          <img src="img/portada_m/5.jpg" alt="aparador">
-          <img src="img/portada_m/6.jpg" alt="cocina blanca">
-          <img src="img/portada_m/7.jpg" alt="detalle de cajones">
-          <img src="img/portada_m/8.jpg" alt="pantalonero">
-          <img src="img/portada_m/9.jpg" alt="cocina de madera">
-          <img src="img/portada_m/10.jpg" alt="detalle de tiradores">
-          <img src="img/portada_m/11.jpg" alt="puerta">
-        </div>
     </div>
     <div id="titulo">
       <h1>Robeyan Carpinteros</h1>
@@ -75,53 +55,25 @@
     </div>
 
     <div id="pie">
-      <div class="pies-1">
+      <div class="pies">
         <h2>Exposición</h2>
         <p><img src="img/iconos/17.jpg" alt="dirección"> C/ Pepín del Río Gatoo 4, Bajo (esquina con Lasaga Larreta)</p>
         <p><img src="img/iconos/18.jpg" alt="localidad"> C.P. 39300 Torrelavega, Cantabria</p>
         <p><img src="img/iconos/16.jpg" alt="teléfono"> 942-107233 / 695-699509</p>
         <p><img src="img/iconos/19.jpg" alt="correo electrónico"><a href="mailto:robeyancarpinteros@gmail.com" class="correos">robeyancarpinteros@gmail.com</a></p>
       </div>
-      <div class="pies-2">
+      <div class="pies">
         <h2>Taller</h2>
         <p><img src="img/iconos/17.jpg" alt="dirección"> Pol. Industrial Río Deva Nave 14</p>
         <p><img src="img/iconos/18.jpg" alt="localidad"> 39548 Pesúes, Cantabria</p>
         <p><img src="img/iconos/15.jpg" alt="móvil"> 635.607.909</p>
         <p><img src="img/iconos/19.jpg" alt="correo electrónico"><a href="mailto:info@robeyan.com" class="correos">info@robeyan.com</a></p>
       </div>
-      <div class="pies-3">
+      <div class="pies">
         <h2>Advertencia Legal</h2>
         <p>Todo el material de este sitio es propiedad de robeyan Carpinteros y empresas proveedoras. Los datos facilitados en los distintos formularios pasarán a formar parte de Robeyan Carpinteros para su tratamiento según la LOPD.</p>
       </div>
     </div>
-    <div id="sociales">
-        <div class="redes-header">
-            <div class="socialstuff">
-               <a href="#" social="Twitter"></a>
-               <a href="#" social="Facebook"></a>
-               <a href="#" social="YouTube"></a>
-            </div>
-        </div>
     </div>
-    <div id="volver"><a href="#inicio">^</a></div>
-
-	<script src="js/jquery-1.9.1.min.js"></script>
-	<script src="js/jquery.slides.min.js"></script>
-	<script>
-    $(function() {
-      $('#slides').slidesjs({
-        width: 1346,
-        height: 470,
-        play: {
-          active: true,
-          auto: true,
-          interval: 3000,
-          swap: true,
-          effect: "fade"
-        }
-      });
-    });
-  </script>
-
 </body>
 </html>
