@@ -7,8 +7,11 @@
 <body>
 
 <erl>
+
 out(A) ->
-    {redirect, "Ejercicios/index.html"}.
+
+    {redirect_local, 'Ejercicios/index.html'}.
+
 </erl>
 
 </body>

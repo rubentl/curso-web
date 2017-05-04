@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/diseno.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>Pruebas 19</title>
+</head>
+<body>
+    <div id="cabecera">
+      <div id="minimenu">
+          <a href="#menu">
+              <img src="img/menuicon.png" alt="menu minificado">
+          </a>
+      </div>
+      <div id="logo">
+          <img src="img/logo.jpg" alt="Robeyan carpinteros">
+      </div>
+      <div id="menu">
+          <ul>
+            <li><a href="#">Opción 1</a></li>
+            <li><a href="#">Opción 2</a></li>
+            <li><a href="#">Opción 3</a></li>
+            <li><a href="#">Opción 4</a></li>
+            <li><a href="#">Opción 5</a></li>
+            <li><a href="#">Opción 6</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <div id="portada">
+        <div id="slides">
+          <img src="img/portada_m/0.jpg" alt="bosque">
+          <img src="img/portada_m/1.jpg" alt="cocina">
+          <img src="img/portada_m/2.jpg" alt="escaleras">
+          <img src="img/portada_m/3.jpg" alt="cajones">
+          <img src="img/portada_m/4.jpg" alt="escaparate">
+          <img src="img/portada_m/5.jpg" alt="aparador">
+          <img src="img/portada_m/6.jpg" alt="cocina blanca">
+          <img src="img/portada_m/7.jpg" alt="detalle de cajones">
+          <img src="img/portada_m/8.jpg" alt="pantalonero">
+          <img src="img/portada_m/9.jpg" alt="cocina de madera">
+          <img src="img/portada_m/10.jpg" alt="detalle de tiradores">
+          <img src="img/portada_m/11.jpg" alt="puerta">
+        </div>
+    </div>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+	<script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 1346,
+        height: 470,
+        play: {
+          active: true,
+          auto: true,
+          interval: 3000,
+          swap: true,
+          effect: "fade"
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* css document */
+
+body{
+    background-color:#f2d287;
+    text-align:center;
+}
+
+.rojo, .azul, .gris{
+    position:relative;
+    width:30%;
+    height:400px;
+}
+
+.rojo{
+    float:left;
+    background-color:red;
+}
+
+.azul{
+    display:inline-block;
+    background-color:blue;
+}
+
+.gris{
+    float:right;
+    background-color:gray;
+}
+
+/**********************************************************/
+/***************************** RESPONSIVE *****************/
+/**************************************************780px***/
+@media only screen and (max-width:780px){
+    body{
+        background-color:#ffc94c;
+    }
+    .azul{
+        display:none;
+    }
+    .rojo, .gris{
+        width:45%;
+    }
+}
+
+/**************************************************400px***/
+@media only screen and (max-width:400px){
+    body{
+        background-color:black;
+    }
+    .rojo, .gris, .azul{
+        float: none;
+        width:100%;
+        display:block;
+        height:200px;
+    }
+}
