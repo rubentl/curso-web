@@ -12,19 +12,20 @@
 </head>
 
 <body>
-    <div class="contenedor">
-        <div id="cabecera" class="animated bounceInRight">
+    <div id="contenedor" class="flex-column">
+        <div id="cabecera" class="animated bounceInRight estructura flex-row
+            duration-6">
             <p><img src="img/icons/phone.svg" alt="telefono"> 555-555-555
             </p>
             <p><img src="img/icons/message.svg" alt="email"> tulimpiador@gmail.es
             </p>
         </div>
 
-        <div id="cuerpo1">
-            <div class="servicios">
+        <div id="cuerpo1" class="flex-row">
+            <div class="servicios info flex-row">
                 <div class="tarifas">
                     <img src="img/logo.png" alt="Marca de empresa" class="animated
-                    flip">
+                    flip delay-6">
                 </div>
                 <div class="tarifas">
                     <h2>Comunidades</h2>
@@ -51,21 +52,24 @@
                         molestias architecto repellat</p>
                 </div>
             </div>
-            <div id="menu">
+            <div id="menu" class="flex-column">
                 <ul>
-                    <li><a href="empresa.html" class="animated zoomIn">La empresa</a></li>
-                    <li><a href="servicios.html" class="animated zoomIn">Los servicios</a></li>
-                    <li><a href="contacto.html" class="animated zoomIn">El contacto</a></li>
+                    <li><a href="empresa.html" class="animated zoomIn estructura
+                            duration-3">La empresa</a></li>
+                    <li><a href="servicios.html" class="animated zoomIn estructura
+                            duration-3">Los servicios</a></li>
+                    <li><a href="contacto.html" class="animated zoomIn estructura
+                            duration-3">El contacto</a></li>
                 </ul>
             </div>
         </div>
 
-        <div id="cuerpo2">
-            <div id="solapa">
+        <div id="cuerpo2" class="flex-row">
+            <div id="solapa" class="info flex-row">
                 <div class="titulo">
                     <object id="titulo" type="image/svg+xml" data="img/dibujo.svg"></object>
                     <div id="slider">
-                        <img src="img/limpieza/0.jpg" alt="limpieza" id="laimagen">
+                        <img src="img/limpieza/0.jpg" alt="limpieza" id="laimagen" class="info">
                     </div>
                 </div>
                 <div class="texto">
@@ -86,26 +90,29 @@
                     </p>
                 </div>
             </div>
-            <div id="pie">
-              <p>Certificado AENOR: ISO9001</p>
+            <div id="pie" class="estructura flex-row">
+                <p>Certificado AENOR: ISO9001</p>
             </div>
         </div>
 
     </div>
-    
+
     <script type="text/javascript" src="js/vivus.js"></script>
     <script type="text/javascript">
-        window.onload = function(){
+        window.onload = function()
+        {
             var nombre = [
-                    "img/limpieza/0.jpg",
-                    "img/limpieza/1.jpg",
-                    "img/limpieza/2.jpg",
-                    "img/limpieza/3.jpg"
-                ];
+                "img/limpieza/0.jpg",
+                "img/limpieza/1.jpg",
+                "img/limpieza/2.jpg",
+                "img/limpieza/3.jpg"
+            ];
             var img = 0;
             var contenido = document.getElementById('laimagen');
-            setInterval(function() {
-                if (img > 3) {
+            setInterval(function()
+            {
+                if (img > 3)
+                {
                     img = 0;
                 }
                 contenido.src = nombre[img];
@@ -114,7 +121,12 @@
         };
     </script>
     <script>
-      new Vivus('titulo', {duration: 300, type: 'oneByOne', start: 'autostart'});
+        new Vivus('titulo',
+        {
+            duration: 300,
+            type: 'oneByOne',
+            start: 'autostart'
+        });
     </script>
 
 </body>
