@@ -1,17 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Rubén Toca Lucio">
-  <meta name="description"  content="Servicios de Limpieza TuLimpiador">
-  <link rel="stylesheet" href="css/estilos.css" type="text/css">
-  <title>Tu limpiador</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rubén Toca Lucio">
+    <meta name="description" content="Servicios de Limpieza TuLimpiador">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <title>Tu limpiador</title>
+
 </head>
+
 <body>
     <div class="contenedor">
-      <div id="cabecera">
-      </div>
+        <div id="cabecera" class="animated bounceInRight">
+            <p><img src="img/icons/phone.svg" alt="telefono"> 555-555-555
+            </p>
+            <p><img src="img/icons/message.svg" alt="email"> tulimpiador@gmail.es
+            </p>
+        </div>
+
+        <div id="cuerpo1">
+            <div class="servicios">
+                <div class="tarifas">
+                    <img src="img/logo.png" alt="Marca de empresa" class="animated
+                    flip">
+                </div>
+                <div class="tarifas">
+                    <h2>Comunidades</h2>
+                    <p>Amet veniam eaque libero sunt quos! Tenetur architecto blanditiis
+                        aliquid assumenda illo Soluta illo fuga quia dolor id.
+                        Asperiores aliquid!</p>
+                </div>
+                <div class="tarifas">
+                    <h2>Hogares</h2>
+                    <p>Consectetur neque ipsum modi ad maiores quo Vitae accusantium
+                        perspiciatis optio dolor quibusdam. Tempora mollitia doloremque
+                        magnam mollitia vitae. Accusantium.</p>
+                </div>
+                <div class="tarifas">
+                    <h2>Empresas</h2>
+                    <p>Sit lorem molestias unde aut laboriosam. Dignissimos odit harum
+                        quis nostrum iure. Quia dolorum quisquam exercitationem
+                        iste sapiente. Est eum..</p>
+                </div>
+                <div class="tarifas">
+                    <h2>Eventos</h2>
+                    <p>Ipsum repellat temporibus totam rerum vel. Optio optio blanditiis
+                        omnis illo illum! Facere totam quae veritatis repellat
+                        molestias architecto repellat</p>
+                </div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="empresa.html" class="animated zoomIn">La empresa</a></li>
+                    <li><a href="servicios.html" class="animated zoomIn">Los servicios</a></li>
+                    <li><a href="contacto.html" class="animated zoomIn">El contacto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="cuerpo2">
+            <div id="solapa">
+                <div class="titulo">
+                    <object id="titulo" type="image/svg+xml" data="img/dibujo.svg"></object>
+                    <div id="slider">
+                        <img src="img/limpieza/0.jpg" alt="limpieza" id="laimagen">
+                    </div>
+                </div>
+                <div class="texto">
+                    <p>Consectetur eum assumenda tempore aspernatur ipsam Iste ipsam
+                        nisi veniam explicabo nam repudiandae. Fugiat consectetur
+                        mollitia optio reprehenderit aliquid maiores? Consequuntur
+                        consequuntur at aliquid pariatur optio! Doloremque facere
+                        ab nostrum. Consectetur elit dignissimos molestias tenetur
+                        quibusdam? Consectetur eum assumenda tempore aspernatur
+                        ipsam Iste ipsam nisi veniam explicabo nam repudiandae.
+                        Fugiat consectetur mollitia optio reprehenderit aliquid
+                        maiores? Consequuntur consequuntur at aliquid pariatur
+                        optio! Doloremque facere ab nostrum. Consectetur elit dignissimos
+                        molestias tenetur. Elit porro inventore eum consectetur
+                        dolore Facilis praesentium voluptatem exercitationem adipisci
+                        sed. Sunt voluptas adipisci iusto est magnam. Perferendis
+                        beatae?
+                    </p>
+                </div>
+            </div>
+            <div id="pie">
+              <p>Certificado AENOR: ISO9001</p>
+            </div>
+        </div>
+
     </div>
-  
+    
+    <script type="text/javascript" src="js/vivus.js"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+            var nombre = [
+                    "img/limpieza/0.jpg",
+                    "img/limpieza/1.jpg",
+                    "img/limpieza/2.jpg",
+                    "img/limpieza/3.jpg"
+                ];
+            var img = 0;
+            var contenido = document.getElementById('laimagen');
+            setInterval(function() {
+                if (img > 3) {
+                    img = 0;
+                }
+                contenido.src = nombre[img];
+                img++;
+            }, 3000);
+        };
+    </script>
+    <script>
+      new Vivus('titulo', {duration: 300, type: 'oneByOne', start: 'autostart'});
+    </script>
+
 </body>
+
 </html>
