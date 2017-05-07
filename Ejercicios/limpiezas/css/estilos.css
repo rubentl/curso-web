@@ -6,19 +6,23 @@
 }
 
 body {
-    background: url("../img/fondo.svg") no-repeat;
-    background-size: cover;
+    background: url("../img/fondo.svg") no-repeat center / cover;
 }
 
 .contenedor {
-    width: 90%;
+    width: 90vw;
     margin: 10px auto;
+    display:flex;
+    flex-flow:column nowrap;
+    max-height:95vh;
+    justify-content:space-between;
+    align-items:center;
 }
 
 #cabecera {
     width: 60%;
     color: white;
-    margin: 10px auto;
+    margin: 5px auto;
     background-color: #2a2aff;
     border: 2px solid white;
     border-radius: 10px;
