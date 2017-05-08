@@ -7,6 +7,7 @@
 
 body {
     background: url("../img/fondo.svg") repeat-y center / cover;
+    font-family: "Monaco for Powerline", sans-serif;
 }
 
 h1,
@@ -22,6 +23,7 @@ p {
 a {
     text-decoration: none;
     display: block;
+    color: white;
 }
 
 ul {
@@ -69,7 +71,6 @@ ul {
 #contenedor {
     width: 90vw;
     margin: 10px auto;
-    max-height: 95vh;
     justify-content: space-between;
     align-items: center;
 }
@@ -87,8 +88,10 @@ ul {
     margin: 0 5px;
 }
 
-#cuerpo1 {
+#cuerpo1{
+    margin: 10px auto;
     width: 100%;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -102,8 +105,15 @@ ul {
     align-content: flex-start;
 }
 
-.tarifas {
-    flex: 0 1 28%;
+.empresa{
+    flex: 1 0 75%;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.tarifas, .conoce {
+    flex: 0 1 32%;
     padding: 10px;
     font-size: 0.9em;
     text-align: justify;
@@ -111,6 +121,15 @@ ul {
 
 .tarifas img {
     width: 90%;
+}
+
+.conoce img{
+    width: 80%;
+}
+
+.conoce{
+    justify-content:flex-start;
+    align-items:center;
 }
 
 #menu {
@@ -122,8 +141,7 @@ ul {
 #menu a {
     padding: 15px;
     text-align: center;
-    font-weight: bold;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 #menu a:hover {
@@ -133,6 +151,7 @@ ul {
 }
 
 #cuerpo2 {
+    margin: 10px auto;
     width: 100%;
     margin-top: -180px;
     justify-content: flex-end;
@@ -175,7 +194,102 @@ ul {
 #pie {
     width: 30%;
     margin: 0 auto;
-    justify-content: space-around;
-    align-items: center;
+    text-align:center;
     order: -1;
+}
+
+input[type=submit]{
+    padding: 5px 10px;
+}
+
+.margen{
+    padding: 20px;
+}
+
+#contacto{
+    flex: 1 1 40%;
+    justify-content:center;
+    align-content:center;
+}
+
+#mapa{
+    flex: 1 0 30%;
+    height: 400px;
+}
+
+#formulario{
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-content:center;
+    align-items:center;
+}
+
+/************************************************************************************ 780 px ******************/
+
+@media only screen and (max-width:780px){
+    .servicios{
+        flex: 1 0 70%;
+    }
+
+    .tarifas{
+        flex: 1 0 45%;
+    }
+
+    #menu{
+        order: -1;
+    }
+
+    #menu ul{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #cuerpo2{
+        margin-top: 5px;
+        flex-wrap: wrap;
+    }
+
+    #solapa{
+        flex: 1 1 100%;
+    }
+
+    #slider{
+        display: none;
+    }
+
+    .texto{
+        flex: 1 0 100%;
+    }
+
+    #contacto{
+        flex: 1 1 20%;
+    }
+
+    #mapa{
+        flex: 1 1 100%;
+    }
+
+    #pie{
+        order: 0;
+        flex: 0 0 70%;
+        margin-top: 5px;
+    }
+}
+
+/***************************************************************************** 400px **************************/
+@media only screen and (max-width:400px){
+    
+    #cuerpo1{
+        flex-flow: column nowrap;
+    }
+
+
+    .conoce{
+        flex: 1 1 45%;
+    }
+
+    #contacto{
+        order: 0;
+    }
+
 }
