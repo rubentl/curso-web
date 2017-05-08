@@ -150,6 +150,11 @@ ul {
     border: 2px solid #2a2aff;
 }
 
+#menu img{
+    width:30px;
+    margin-right:10px;
+}
+
 #cuerpo2 {
     margin: 10px auto;
     width: 100%;
@@ -199,7 +204,7 @@ ul {
 }
 
 input[type=submit]{
-    padding: 5px 10px;
+    padding: 3px 10px;
 }
 
 .margen{
@@ -224,6 +229,15 @@ input[type=submit]{
     align-items:center;
 }
 
+#formulario div{
+    padding: 5px;
+}
+
+#contacto a {
+    padding: 5px;
+    text-align:center;
+}
+
 /************************************************************************************ 780 px ******************/
 
 @media only screen and (max-width:780px){
@@ -242,6 +256,10 @@ input[type=submit]{
     #menu ul{
         display: flex;
         flex-flow: row wrap;
+    }
+
+    #menu ul li{
+        flex: 1 1 90%;
     }
 
     #cuerpo2{
@@ -274,6 +292,10 @@ input[type=submit]{
         flex: 0 0 70%;
         margin-top: 5px;
     }
+   .conoce{
+        flex: 1 1 50%;
+    }
+
 }
 
 /***************************************************************************** 400px **************************/
@@ -281,11 +303,6 @@ input[type=submit]{
     
     #cuerpo1{
         flex-flow: column nowrap;
-    }
-
-
-    .conoce{
-        flex: 1 1 45%;
     }
 
     #contacto{
