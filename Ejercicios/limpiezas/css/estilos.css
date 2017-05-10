@@ -2,7 +2,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -31,13 +32,23 @@ ul {
 }
 
 .flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .flex-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .info {
@@ -45,7 +56,8 @@ ul {
     background-color: white;
     border: 2px solid #2a2aff;
     border-radius: 10px;
-    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.5);
 }
 
 .estructura {
@@ -53,34 +65,48 @@ ul {
     background-color: #2a2aff;
     border: 2px solid white;
     border-radius: 10px;
-    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.5);
 }
 
 .duration-3 {
-    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
 }
 
 .duration-6 {
-    animation-duration: 6s;
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
 }
 
 .delay-6 {
-    animation-delay: 6s;
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
 }
 
 #contenedor {
     width: 90vw;
     margin: 10px auto;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #cabecera {
-    flex: 1 0 60%;
-    flex-wrap: wrap;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 60%;
+            flex: 1 0 60%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 5px auto;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #cabecera img {
@@ -91,29 +117,49 @@ ul {
 #cuerpo1{
     margin: 10px auto;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 .servicios {
-    flex-wrap: wrap;
-    flex: 0 0 55%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 55%;
+            flex: 0 0 55%;
     padding: 10px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
 }
 
 .empresa{
-    flex: 1 0 75%;
-    flex-wrap: wrap;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 75%;
+            flex: 1 0 75%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 10px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .tarifas, .conoce {
-    flex: 0 1 32%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 32%;
+            flex: 0 1 32%;
     padding: 10px;
     font-size: 0.9em;
     text-align: justify;
@@ -128,14 +174,24 @@ ul {
 }
 
 .conoce{
-    justify-content:flex-start;
-    align-items:center;
+    -webkit-box-pack:start;
+        -ms-flex-pack:start;
+            justify-content:flex-start;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
 }
 
 #menu {
-    flex: 0 0 25%;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #vermenu a {
@@ -159,15 +215,26 @@ ul {
     margin: 10px auto;
     width: 100%;
     margin-top: -180px;
-    justify-content: flex-end;
-    align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 #solapa {
-    flex-wrap: wrap;
-    flex: 0 0 50%;
-    justify-content: flex-end;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px;
 }
 
@@ -178,13 +245,15 @@ ul {
 #slider {
     width: 70%;
     position: absolute;
-    top: 200px;
+    top: 180px;
     left: -260px;
 }
 
 .titulo {
     position: relative;
-    flex: 0 0 100%
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%
 }
 
 #titulo {
@@ -192,7 +261,9 @@ ul {
 }
 
 .texto {
-    flex: 0 0 70%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%;
     text-align: justify;
 }
 
@@ -200,7 +271,9 @@ ul {
     width: 30%;
     margin: 0 auto;
     text-align:center;
-    order: -1;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
 }
 
 input[type=submit]{
@@ -212,21 +285,34 @@ input[type=submit]{
 }
 
 #contacto{
-    flex: 1 1 40%;
-    justify-content:center;
-    align-content:center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -ms-flex-line-pack:center;
+        align-content:center;
 }
 
 #mapa{
-    flex: 1 0 30%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 30%;
+            flex: 1 0 30%;
     height: 400px;
 }
 
 #formulario{
-    flex-wrap:wrap;
-    justify-content:space-between;
-    align-content:center;
-    align-items:center;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+    -ms-flex-line-pack:center;
+        align-content:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
 }
 
 #formulario div{
@@ -253,6 +339,36 @@ input[type=submit]{
     border-color:#2a2aff;
 }
 
+#gracias:target{
+    opacity:1;
+    pointer-events:auto;
+    z-index:999;
+}
+
+#gracias a{
+    color: blue;
+    text-align:right;
+    font-size:0.7em;
+}
+
+.gracias-contenido{
+    width:300px;
+    padding: 20px;
+    margin: 20% auto;
+    position: relative;
+}
+
+.gracias{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+}
+
 /************************************************************************************ 780 px ******************/
 
 @media only screen and (max-width:780px){
@@ -262,16 +378,24 @@ input[type=submit]{
     }
 
     .servicios{
-        flex: 1 0 70%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 70%;
+                flex: 1 0 70%;
     }
 
     .tarifas{
-        flex: 1 0 45%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 45%;
+                flex: 1 0 45%;
     }
 
     #menu{
-        order: -1;
-        flex: 1 1 100%;
+        -webkit-box-ordinal-group: 0;
+            -ms-flex-order: -1;
+                order: -1;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%;
     }
 
     #menuicon{
@@ -287,21 +411,31 @@ input[type=submit]{
 
     #vermenu:target{
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-flow: row wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
     }
 
     #vermenu li{
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
     }
 
     #cuerpo2{
         margin-top: 5px;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     #solapa{
-        flex: 1 1 100%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%;
     }
 
     #slider{
@@ -309,37 +443,54 @@ input[type=submit]{
     }
 
     .texto{
-        flex: 1 0 100%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 100%;
+                flex: 1 0 100%;
     }
 
     #contacto{
-        flex: 1 1 20%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 20%;
+                flex: 1 1 20%;
     }
 
     #mapa{
-        flex: 1 1 100%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%;
     }
 
     #pie{
-        order: 0;
-        flex: 0 0 70%;
+        -webkit-box-ordinal-group: 1;
+            -ms-flex-order: 0;
+                order: 0;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 70%;
+                flex: 0 0 70%;
         margin-top: 5px;
     }
    .conoce{
-        flex: 1 1 50%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 50%;
+                flex: 1 1 50%;
     }
 
 }
 
 /***************************************************************************** 400px **************************/
 @media only screen and (max-width:400px){
-    
+
     #cuerpo1{
-        flex-flow: column nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
     }
 
     #contacto{
-        order: 0;
+        -webkit-box-ordinal-group: 1;
+            -ms-flex-order: 0;
+                order: 0;
     }
 
 }
