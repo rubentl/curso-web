@@ -1,15 +1,28 @@
 /* css document */
 
-body{
+*{
     padding: 0;
     margin: 0;
+}
+
+body{
     background-color: #888;
+}
+
+ul{
+    list-style:none;
+}
+
+a{
+    display: block;
+    text-decoration:none;    
 }
 
 #contenedor{
     width: 100%;
     display:flex;
     flex-flow: column nowrap;
+    align-items:center;
 }
 
 #cabecera{
@@ -23,12 +36,18 @@ body{
     background-color: white;
 }
 
+#superior a{
+    display: inline;
+    text-decoration:underline;
+    color: #466c00;
+}
+
 #superior{
     width:70%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 10px 20px;
     display:flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content:space-between;
     align-items: flex-end;
     border-bottom: 1px solid #466c00;
@@ -49,20 +68,11 @@ body{
 #menu ul{
     display: flex;
     flex-flow: row wrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
-#menu ul li{
-    padding: 0;
-    margin: 0;
-}
 
 #menu ul a{
-    display: block;
     padding: 15px;
-    text-decoration:none;
     color: black;
     border-top: 5px solid transparent;
     border-left: 5px solid transparent;
@@ -72,9 +82,97 @@ body{
 #menu ul a:hover{
     background-color: #000;
     color: #fff;
-    border-top: 5px solid green;
+    border-top: 5px solid orange;
 }
 
-#menu ul li:first-child a{
-    border-top: 5px solid orange;
+#cuerpo{
+    width:73%;
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    background-color: white;
+    margin: 30px 0;
+}
+
+#submenu{
+    width:20%;
+    background-color: black;
+    opacity:0;
+    pointer-events:none;
+}
+
+#submenu:target{
+    opacity:1;
+    pointer-events:auto;
+}
+
+#submenu a{
+    color: white;
+    padding: 5px 10px;
+    border-right: 5px solid transparent;
+}
+
+#submenu a:hover{
+    border-right: 5px solid orange;
+}
+
+#central{
+    flex: 1 0 75%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+}
+
+#imagen{
+    flex: 1 1 100%;
+}
+
+#imagen img{
+    width:100%;
+    height:400px;
+}
+
+#texto{
+    border-left:2px solid darkblue;
+    padding: 10px;
+}
+
+#texto h1{
+    background-color:black;
+    color:white;
+    margin-bottom: 40px;
+    padding-left: 10px;
+}
+
+#texto h2{
+    padding-bottom: 5px;
+}
+
+#texto p{
+    padding-bottom: 20px;
+}
+
+#pie{
+    padding: 10px 0 30px 0;
+    background-color:#333;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+}
+
+#contacto{
+    width:20%
+}
+
+#contacto p{
+    color:white;
+}
+
+#contacto a {
+    color:green;
+    text-decoration:underline;
+}
+
+#sociales{
+    width:20%;
 }

@@ -8,15 +8,17 @@
 </head>
 <body>
     <div id="contenedor">
+        <!-- La cabecera -->
        <div id="cabecera">
            <div id="superior">
                <p><img src="img/logo.png" alt="SIC Cantabria" title="SIC Cantabria"></p>
                <p>Mail: <a href="#" title="correo electrónico">contacto@siccantabria.com</a> Telf: 942 10 00 10</p>
            </div>
+           <!-- El menú -->
            <div id="menu">
                <ul>
                  <li><a href="#">INICIO</a></li>
-                 <li><a href="#">Servicios</a></li>
+                 <li><a href="#submenu">Servicios</a></li>
                  <li><a href="#">Información</a></li>
                  <li><a href="#">Contacto</a></li>
                </ul>
@@ -27,9 +29,72 @@
                    <a href="#" social="YouTube"></a>
                  </div>
                </div>
+           </div> 
+       </div>
+       <div id="cuerpo">
+           <div id="submenu">
+             <ul>
+               <li><a href="#">Servicio Técnico</a></li>
+               <li><a href="#">Mantenimiento Informático</a></li>
+               <li><a href="#">Diseño y Aplicaciones Web</a></li>
+               <li><a href="#">Asesoramiento Informático</a></li>
+               <li><a href="#">Reparación de Ordenadores</a></li>
+               <li><a href="#">Instalación de Redes</a></li>
+               <li><a href="#">Equipos Wifi</a></li>
+             </ul>
+           </div>
+           <div id="central">
+             <div id="imagen"><img src="img/naranjas2.jpg" alt="todo naranjas" id="laimagen"></div>
+             <div id="texto">
+                 <h1>MANTENIMIENTO INFORMÁTICO</h1>
+                 <p>Consectetur dolor similique sit beatae est qui molestias, optio ullam! Sed explicabo non magnam ad reprehenderit omnis? Dolor optio vero minus unde repellendus magni deleniti cum. Nobis tempora quae et enim nam? Inventore cumque earum quibusdam laborum aut. Veniam magni ut voluptatem suscipit harum magni Ex saepe possimus neque repellendus</p>
+                 <h2>Diseño</h2>
+                 <p>Amet libero nesciunt maiores rem cumque? Sapiente quis ex pariatur adipisicing quo! Reprehenderit vero quia tenetur dolore nobis distinctio fugit? Quaerat accusantium provident commodi earum nihil, ex, quos! Sint ipsam consequuntur sunt pariatur ipsum. Ab alias atque eveniet minima omnis! Libero hic a neque doloribus praesentium? Et praesentium facilis quod</p>
+                 <h2>Sustitución de logotipo</h2>
+                 <p>Amet libero nesciunt maiores rem cumque? Sapiente quis ex pariatur adipisicing quo! Reprehenderit vero quia tenetur dolore nobis distinctio fugit? Quaerat accusantium provident commodi earum nihil, ex, quos! Sint ipsam consequuntur sunt pariatur ipsum. Ab alias atque eveniet minima omnis! Libero hic a neque doloribus praesentium? Et praesentium facilis quod</p>
+                 <p>Amet consequuntur dicta modi adipisci recusandae deserunt dolorum Placeat fugiat sunt explicabo nihil cum? Unde libero culpa nesciunt accusamus aliquid sequi Fuga beatae molestiae laborum quisquam provident modi? Repudiandae reiciendis expedita harum aliquid quibusdam accusamus Architecto necessitatibus sit aliquam sint nemo nemo possimus! Odio ea voluptates vero ut harum? Laborum?</p>
+                 <p>Amet libero nesciunt maiores rem cumque? Sapiente quis ex pariatur adipisicing quo! Reprehenderit vero quia tenetur dolore nobis distinctio fugit? Quaerat accusantium provident commodi earum nihil, ex, quos! Sint ipsam consequuntur sunt pariatur ipsum. Ab alias atque eveniet minima omnis! Libero hic a neque doloribus praesentium? Et praesentium facilis quod</p>
+             </div>
            </div>
        </div>
-       <!-- <div id="cuerpo"></div> -->
+       <div id="pie">
+         <div id="contacto">
+            <p>| &copy; 2015 Sic Cantabria</p>
+            <p>| 555-555-555</p>
+            <p class="verde"><a href="mailto:contacto@siccantabria.es">| contacto@siccantabria.es</a></p>
+         </div>
+         <div id="sociales">
+             <div class="redes-header">
+                 <div class="socialstuff">
+                   <a href="#" social="Twitter"></a>
+                   <a href="#" social="Facebook"></a>
+                   <a href="#" social="YouTube"></a>
+                 </div>
+               </div>
+         </div>
+       </div>
     </div>
+
+    <script type="text/javascript">
+        window.onload = function()
+        {
+            var nombre = [
+                "img/citricos.jpg",
+                "img/limas.jpg",
+                "img/naranjas2.jpg"
+            ];
+            var img = 0;
+            var contenido = document.getElementById('laimagen');
+            setInterval(function()
+            {
+                if (img > (nombre.length - 1))
+                {
+                    img = 0;
+                }
+                contenido.src = nombre[img];
+                img++;
+            }, 3000);
+        };
+    </script>
 </body>
 </html>
