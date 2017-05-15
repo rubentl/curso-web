@@ -79,9 +79,9 @@ a{
     border-right: 5px solid transparent;
 }
 
-#menu ul a:hover{
-    background-color: #000;
-    color: #fff;
+#menu ul a:hover {
+    /* background-color: #000; */
+    /* color: #fff; */
     border-top: 5px solid orange;
 }
 

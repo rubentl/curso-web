@@ -1,3 +1,5 @@
+%% -*- coding: utf-8 -*-
+
 -module(pruebas).
 -author("Rubén Toca").
 -vsn("0.0.1").
@@ -27,7 +29,10 @@
             horario
          }).
 
-tablas() -> [noticia, evento, contacto].
+tablas() -> #{contacto => record_info(fields, contacto),
+              evento => record_info(fields, evento),
+              noticia => record_info(fields, noticia)}.
+            ].
 datos() -> [
             #noticia{titulo = <<"Campamento"/utf8>>,
                      texto = <<"Comienzan las subscripciones para el campamento de verano."/utf8>>,
@@ -66,8 +71,8 @@ info(Data) ->
 
 crear_tabla(Tabla) ->
     mnesia:create_table(
-            Tabla,
-            [{attributes, record_info(fields, Tabla)},
+            element(1, Tabla),
+            [{attributes, element(2, Tabla)},
              {disc_copies, [node()]}
             ]).
 
@@ -84,9 +89,9 @@ preparar_data(Tablas, Datos) ->
 
 main() ->
     application:start(mnesia),
-    preparar_data(tablas(), datos()),
-    Q = qlc:q([L || L <- mnesia:table(libro)], cache),
-    info(qlc:info(Q)),
+    % preparar_data(tablas(), datos()),
+    Q = qlc:q([L#contacto.nombre || L <- mnesia:table(contacto)]),
+    % info(qlc:info(Q)),
     Result = query(Q),
     info(Result),
 
