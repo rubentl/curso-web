@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>slider de las páginas del curso</title>
+</head>
+<body>
+    <div id="slider">
+      <img src="img/angel.png" alt="limpieza" id="laimagen">
+    </div>
+
+   <script type="text/javascript">
+        window.onload = function()
+        {
+            var nombre = [
+                "img/angel.png",
+                "img/edgar.png",
+                "img/enrique.png",
+                "img/eva.png",
+                "img/iva.png",
+                "img/jose.png",
+                "img/juan.png",
+                "img/luis.png",
+                "img/ruben.png",
+                "img/samara.png"
+            ];
+            var img = 0;
+            var contenido = document.getElementById('laimagen');
+            setInterval(function()
+            {
+                if (img > (nombre.length - 1))
+                {
+                    img = 0;
+                }
+                contenido.src = nombre[img];
+                img++;
+            }, 1000);
+        };
+    </script>
+
+</body>
+</html>

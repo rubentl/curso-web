@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Índice General</title>
+</head>
+<body>
+    <div id="contenedor">
+      <div id="menu">
+          <h1>Menú</h1>
+	      <button class="boton" onclick='openLink(event, "http://formacionpielagos.es:88/0418/angel/index.html")'>Ángel</button>
+	      <button class="boton" onclick='openLink(event, "http://formacionpielagos.es:88/0418/edgar/index.html")'>Edgar</button>
+	      <button class="boton" onclick='openLink(event, "http://formacionpielagos.es:88/0418/elena/index.html")'>Elena</button>
+	      <button class="boton" onclick='openLink(event, "http://formacionpielagos.es:88/0418/enrique/index.html")'>Enrique</button>
+	      <button class="boton" onclick='openLink(event, "http://formacionpielagos.es:88/0418/eva/index.html")'>Eva</button>
+          <button class="boton" onclick='openLink(event, "http://formacionpielagos.es:88/0418/ivan/index.html")'>Iván</button>
+	      <button class="boton" onclick='openLink(event, "http://formacionpielagos.es:88/0418/jose/index.html")'>Jose</button>
+	      <button class="boton" onclick='openLink(event, "http://formacionpielagos.es:88/0418/juan/index.html")'>Juan</button>
+	      <button class="boton" onclick='openLink(event, "http://formacionpielagos.es:88/0418/luis/index.html")'>Luis</button>
+	      <button class="boton" onclick='openLink(event, "http://formacionpielagos.es:88/0418/paqui/index.html")'>Paqui</button>
+	      <button class="boton" onclick='openLink(event, "http://formacionpielagos.es:88/0418/ruben/index.html")'>Rubén</button>
+	      <button class="boton" onclick='openLink(event, "http://formacionpielagos.es:88/0418/samara/index.html")'>Samara</button>
+      </div>
+      <div id="pagina">
+          <button id="enlace"> Ir a la página &gt;&gt; </button>
+          <iframe src="fotos.html" sandbox="allow-scripts allow-same-origin" id="frame"></iframe>
+      </div>
+    </div>
+
+    <script>
+        function openLink(event, referencia){
+            var frame, x, i, enlace;
+            x = document.getElementsByClassName("boton");
+            for (i = 0; i < x.length; i++) {
+                x[i].className = "boton";
+            }            
+            frame = document.getElementById("frame");
+            frame.src = referencia;
+            frame.style.opacity = "1";
+            frame.style.pointerEvents = "auto";
+            event.currentTarget.className += " activo";
+            enlace = document.getElementById("enlace");
+            enlace.onclick = function () {
+                window.open(referencia, "_blank");
+            }
+        }
+    </script>
+</body>
+</html>
