@@ -72,10 +72,21 @@ nav a:hover {
 
 nav li:hover .emergente{
     display:block;
-    position:absolute;
+    position:fixed;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     top:10px;
     right:15px;
-    width:300px;
+    width:22%;
     border:4px solid #2d8190;
+}
+
+/******************************* 780px ************************/
+
+@media screen and (max-width:780px){
+    nav li:hover .emergente{
+        width: 50%;
+    }
+    nav{
+        margin-top: 200px;
+    }
 }

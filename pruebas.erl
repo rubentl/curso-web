@@ -4,14 +4,14 @@
 -author("Rubén Toca").
 -vsn("0.0.1").
 
--include_lib("c:/Archivos de programa/erl8.3/lib/stdlib-3.3/include/qlc.hrl").
+-include_lib("C:/Archivos de programa/erl8.3/lib/stdlib-3.3/include/qlc.hrl").
 
 -export([main/0]).
 
 -record(noticia,{
             titulo,
             texto,
-            fecha = {}
+            fecha = []
          }).
 
 -record(evento,{
@@ -29,10 +29,9 @@
             horario
          }).
 
-tablas() -> #{contacto => record_info(fields, contacto),
-              evento => record_info(fields, evento),
-              noticia => record_info(fields, noticia)}.
-            ].
+tablas() -> [contacto, record_info(fields, contacto),
+             evento, record_info(fields, evento),
+             noticia, record_info(fields, noticia)].
 datos() -> [
             #noticia{titulo = <<"Campamento"/utf8>>,
                      texto = <<"Comienzan las subscripciones para el campamento de verano."/utf8>>,
