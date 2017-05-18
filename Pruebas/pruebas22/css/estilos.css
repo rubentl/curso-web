@@ -69,7 +69,7 @@ p {
     flex: 0 1 15%;
 }
 
-img {
+.logo img {
     width: 100%;
 }
 
@@ -114,9 +114,41 @@ img {
 
 #cuerpo{
     padding-top: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    width: 100%;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;    
 }
 
 .izda{
     float:left;
     width: 200px;
+}
+
+#menucuerpo{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+}
+
+#menucuerpo a{
+    padding: 10px 25px;
+    border: 2px solid #466c00;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#menucuerpo a:hover{
+    background-color: #ccc;
+}
+
+#contenido{
+    -webkit-box-flex:0;
+    -ms-flex:0 0 50%;
+    flex:0 0 50%;
+
 }
