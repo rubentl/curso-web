@@ -2,7 +2,7 @@
 
 /* CSS DOCUMENT */
 
-body, a, ul, p, h1, div, img {
+* {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
@@ -27,7 +27,7 @@ p {
     margin-bottom: 20px;
 }
 
-.contenedor {
+#contenedor {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -41,7 +41,7 @@ p {
     align-items: center;
 }
 
-.cabecera {
+#cabecera {
     position: fixed;
     top: 0;
     width: 100%;
@@ -73,7 +73,7 @@ p {
     width: 100%;
 }
 
-.menu {
+#menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -92,27 +92,27 @@ p {
     flex: 0 1 50%;
 }
 
-.menu ul {
+#menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
-.menu li:first-child {
+#menu li:first-child {
     border-right: 1px solid black;
 }
 
-.menu li a {
+#menu li a {
     line-height: 2em;
     padding: 0 25px;
 }
 
-.menu li a:hover {
+#menu li a:hover {
     background-color: #aaa;
     color: white;
 }
 
-.cuerpo{
+#cuerpo{
     padding-top: 150px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -129,24 +129,24 @@ p {
     width: 200px;
 }
 
-.menucuerpo{
+#menucuerpo{
     -webkit-box-flex: 0;
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
 }
 
-.menucuerpo a{
+#menucuerpo a{
     padding: 10px 25px;
     border: 2px solid #466c00;
     text-align: center;
     margin-bottom: 5px;
 }
 
-.menucuerpo a:hover{
+#menucuerpo a:hover{
     background-color: #ccc;
 }
 
-.contenido{
+#contenido{
     -webkit-box-flex:0;
     -ms-flex:0 0 50%;
     flex:0 0 50%;
