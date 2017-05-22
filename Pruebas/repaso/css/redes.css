@@ -1,0 +1,41 @@
+
+
+.redes-header {
+	padding-top: 20px;
+    float: right;
+}
+div .redes-footer {
+	padding: 0;
+	float: right;
+}
+
+.socialstuff {
+	background-color: #333;
+	display:inline-block;
+	padding:3px 15px 3px 15px;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+.socialstuff a {
+  width:18px;
+  height:19px;
+  display:inline-block;
+  position:relative;
+  margin-right:5px;
+  background-image: url(img/social-icons.png);
+}
+
+a[social="Twitter"] {background-position:0 0;}
+a[social="Twitter"]:hover {background-position:0 19px;}
+a[social="Facebook"] {background-position:-28px 0;}
+a[social="Facebook"]:hover {background-position:-28px 19px;}
+a[social="YouTube"] {background-position:-54px 0;}
+a[social="YouTube"]:hover {background-position:-54px 19px;}
+a[social="Linkedin"] {background-position:-81px 0;}
+a[social="Linkedin"]:hover {background-position:-81px 19px;}
+a[social="Flickr"] {background-position:-108px 0;}
+a[social="Flickr"]:hover {background-position:-108px 19px;}
+a[social="Blogs"] { background-position:-133px 0;}
+a[social="Blogs"]:hover {background-position:-133px 19px;}
+a[social="RSS"] {background-position:-161px 0;}
+a[social="RSS"]:hover {background-position:-161px 19px;}

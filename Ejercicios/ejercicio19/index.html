@@ -9,7 +9,7 @@
 <body>
 	<h1>Formulario de alta</h1>
 	<p>Por favor, rellene el siguiente formulario para darse de alta en nuestra web</p>
-	<form action="mensaje.html" name="formulario de contacto" method="post">
+	<form action="envia.asp" name="formulario de contacto" method="post">
 	<table>
 		<tr>
 			<td>Nombre</td>
@@ -17,15 +17,15 @@
 		</tr>
 		<tr>
 			<td>Apellidos</td>
-			<td><input type="text" name="nombre" size="100" maxlength="100"/></td>
+			<td><input type="text" name="apellidos" size="100" maxlength="100"/></td>
 		</tr>
 		<tr>
 			<td>Mail</td>
-			<td><input type="text" name="nombre" size="50" maxlength="50"/></td>
+			<td><input type="text" name="correo" size="50" maxlength="50"/></td>
 		</tr>
 		<tr>
 			<td>Teléfono</td>
-			<td><input type="text" name="nombre" size="12" maxlength="12"/></td>
+			<td><input type="text" name="telefono" size="12" maxlength="12"/></td>
 		</tr>
 		<tr>
 			<td>Cómo nos conoció</td>
@@ -39,14 +39,14 @@
 		</tr>
 		<tr>
 			<td>Con qué frecuencia nos visita</td>
-			<td><input type="radio" name="frecuencia" value="1"/>Mucho<br/>
-			<input type="radio" name="frecuencia" value="2">A menudo<br/>
-			<input type="radio" name="frecuencia" value="3">A veces<br/>
-			<input type="radio" name="frecuencia" value="4">Poco</td>
+			<td><input type="radio" name="frecuencia" value="Mucho"/>Mucho<br/>
+			<input type="radio" name="frecuencia" value="A menudo">A menudo<br/>
+			<input type="radio" name="frecuencia" value="A veces">A veces<br/>
+			<input type="radio" name="frecuencia" value="Poco">Poco</td>
 		</tr>
 		<tr>
 			<td>Comentarios</td>
-			<td><textarea name="observaciones" rows="10" cols="50">Introduce tu consulta</textarea></td>
+			<td><textarea name="comentarios" rows="10" cols="50">Introduce tu consulta</textarea></td>
 		</tr>
 		<tr>
 			<td colspan="2">
