@@ -58,7 +58,6 @@ body {
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
-    z-index: -1;
 }
 
 .menu ul {
@@ -78,7 +77,8 @@ body {
     box-shadow: inset 0 -4px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
-.actual a {
+.actual a,
+.menu a:hover {
     background-color: crimson;
     border-radius: 0 0 8px 8px;
     -webkit-box-shadow: inset 0 -4px 5px 2px rgba(0, 0, 0, 0.3);
@@ -118,7 +118,8 @@ body {
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
 }
 
-.articulo h2 {
+.articulo h2,
+.contacto h2 {
     margin: 0;
     padding-left: 20px;
     color: white;
@@ -135,7 +136,8 @@ body {
     display: block;
 }
 
-.articulo p {
+.articulo p,
+.contacto p {
     padding: 10px;
     text-align: justify;
 }
@@ -143,6 +145,67 @@ body {
 .div-vacio {
     width: 100%;
     height: 100px;
+}
+
+.contacto {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 15px auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+.tabla {
+    position: relative;
+    width: 45%;
+    float: left;
+    margin: 20px auto;
+}
+
+.tabla table {
+    float: right;
+}
+
+.tabla table td:nth-child(odd) {
+    text-align: right;
+    padding-right: 20px;
+    vertical-align: top;
+}
+
+.tabla table td:nth-child(even)>* {
+    border-radius: 5px;
+}
+
+.tabla table td:nth-child(even)>*:focus {
+    border: 2px solid red;
+}
+
+.tabla form input[type=submit] {
+    font-weight: bold;
+}
+
+.tabla form select {
+    font-weight: bold;
+}
+
+.img-contacto {
+    width: 35%;
+    float: right;
+    position: relative;
+    margin: 20px 3% 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.img-contacto img {
+    width: 100%;
+    height: 280px;
+    display: block;
 }
 
 .info {
@@ -174,4 +237,18 @@ body {
 .centrado {
     margin: auto;
     width: 30%;
+}
+
+.gracias {
+    width: 50%;
+    position: relative;
+    margin: 200px auto;
+    -webkit-box-shadow: 0 0 15px 5px #333;
+    box-shadow: 0 0 25px 15px #333;
+    text-align: center;
+    line-height: 5em;
+    font-size: 1.3em;
+    border-radius: 10px;
+    color: black;
+    text-shadow: 2px 2px white;
 }

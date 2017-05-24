@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/redes.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Examen 3</title>
+</head>
+
+<body>
+    <div class="cabecera">
+        <div class="content">
+            <div class="logo">
+                <img src="imagenes/logo.png" alt="logotipo">
+            </div>
+            <div class="sociales">
+                <div class="redes-header">
+                    <div class="socialstuff">
+                        <a href="#" social="Twitter"></a>
+                        <a href="#" social="Facebook"></a>
+                        <a href="#" social="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="content">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Empresa</a></li>
+                    <li><a href="#">Formación</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li class="actual"><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Localización</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <div class="contacto">
+                    <h2>CONTACTO</h2>
+                    <div class="formulario">
+                        <p>Para solicitar cualquier tipo de información póngase en contacto con nosotros mediante el siguiente formulario.
+                        </p>
+                        <div class="tabla">
+                            <form action="envia.asp" method="post" target="_blank">
+                                <table>
+                                    <tr>
+                                        <td><label for="nombre">Nombre*</label></td>
+                                        <td><input type="text" id="nombre" name="nombre" size="25" placeholder="Nombre*"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="email">E-Mail*</label></td>
+                                        <td><input type="text" id="email" name="email" size="25" placeholder="E-Mail*"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="telefono">Teléfono</label></td>
+                                        <td><input type="text" id="telefono" size="25" name="telefono" placeholder="Teléfono (opcional)"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="tipo">Tipo Información*</label></td>
+                                        <td><select name="tipo" id="tipo" size="3">
+                                        <option value="Formación">Formación</option>
+                                        <option value="Serv. Informáticos">Serv. Informáticos</option>
+                                        <option value="Otros">Otros</option>
+                                        </select></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="comentario">Comentarios</label></td>
+                                        <td><textarea name="comentario" id="comentario" cols="19" rows="10" placeholder="Su comentario aquí."></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><input type="submit" value="Enviar"></td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                        <div class="img-contacto">
+                            <img src="imagenes/contacto.jpg" alt="contacto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pie">
+        <div class="content">
+            <div class="info">
+                <p>Centro de formación Piélagos S.L.</p>
+                <p>Barrio Sorribero Bajo nº 15 Bajo</p>
+                <p>Renedo de Piélagos (Cantabria)</p>
+            </div>
+            <div class="info">
+                <div class="centrado">
+                    <p><a href="#">| Aviso Legal</a></p>
+                    <p><a href="#">| Cookies</a></p>
+                    <p><a href="#">| Formularios</a></p>
+                </div>
+            </div>
+            <div class="info">
+                <div class="centrado">
+                    <p>&nbsp;</p>
+                    <p>| 942-585-525</p>
+                    <p class="email"><a href="mailto:contacto@mail.com">contacto@mail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
