@@ -29,33 +29,35 @@
         <div class="content">
             <div class="menu">
                 <ul>
-                    <li class="actual"><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="#">Empresa</a></li>
-                    <li><a href="formacion.html">Formación</a></li>
+                    <li class="actual"><a href="formacion.html">Formación</a></li>
                     <li><a href="#">Servicios</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                     <li><a href="#">Localización</a></li>
                 </ul>
             </div>
             <div class="main">
-                <div class="articulo">
-                    <h2>EMPRESA</h2>
-                    <img src="imagenes/1.jpg" alt="carretera">
-                    <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras.</p>
-                    <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño.</p>
-                    <div class="div-vacio"></div>
+                <div class="formacion">
+                    <div class="formacion_boton">
+                      <h3>Formación</h3>
+                      <button onclick="location.href='#'" type="button"><span>Desempleados</span></button>
+                    </div>
+                    <div class="formacion_boton">
+                      <h3>Formación</h3>
+                      <button onclick="location.href='#'" type="button"><span>Autónomos</span></button>
+                    </div>
+                    <div class="formacion_boton">
+                      <h3>Formación</h3>
+                      <button onclick="location.href='#'" type="button"><span>Ocupados</span></button>
+                    </div>
+                    <div class="formacion_boton">
+                      <h3>Formación</h3>
+                      <button onclick="location.href='#'" type="button"><span>Noentiendo</span></button>
+                    </div>
                 </div>
-                <div class="articulo">
-                    <h2>FORMACIÓN</h2>
-                    <img src="imagenes/2.jpg" alt="atardecer">
-                    <img src="imagenes/3.jpg" alt="bosque">
-                    <img src="imagenes/4.jpg" alt="montaña">
-                </div>
-                <div class="articulo">
-                    <h2>SERVICIOS</h2>
-                    <img src="imagenes/5.jpg" alt="bosque en el atardecer">
-                    <img src="imagenes/6.jpg" alt="llanura">
-                    <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución</p>
+                <div class="fotos">
+                    <img src="imagenes/1.jpg" alt="Mi imagen de slider" id="el-slider">
                 </div>
             </div>
         </div>
@@ -83,6 +85,34 @@
             </div>
         </div>
     </div>
+
+
+ <script type="text/javascript">
+        window.onload = function()
+        {
+            var nombre = [
+                "imagenes/2.jpg",
+                "imagenes/3.jpg",
+                "imagenes/4.jpg",
+                "imagenes/5.jpg",
+                "imagenes/6.jpg",
+                "imagenes/1.jpg"
+            ];
+
+            var img = 0;
+            var contenido = document.getElementById('el-slider');
+            setInterval(function()
+            {
+                if (img > (nombre.length - 1))
+                {
+                    img = 0;
+                }
+                contenido.src = nombre[img];
+                img++;
+            }, 3000);
+        };
+    </script>
+
 </body>
 
 </html>
