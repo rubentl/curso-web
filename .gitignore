@@ -1,2 +1,6 @@
-envia.asp
-*/*/envia.asp
+./Ejercicios/ejercicio19/envia.asp
+./Ejercicios/examen3/envia.asp
+./envia.asp
+*.asp
+!.gitignore
+
