@@ -1,0 +1,134 @@
+@charset: "utf-8";
+
+body, img, a, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("../imagenes/mancha-azul.png") no-repeat;
+    background-size: cover;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.logo{
+    width:20%;
+    margin: 0 30%;
+}
+
+main{
+    width: 95%;
+    height: 70%;
+    overflow: hidden;
+    margin-top: 8%;
+}
+
+article{
+    position:relative;
+    width: 40%;
+    float:left;
+    overflow: hidden;
+    margin-left: 20%;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.6);
+}
+
+article p{
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.fachada,
+.personal{
+    width:40%;
+    display:inline-block;
+    margin: 0 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px #333;
+}
+
+.fachada img,
+.personal img{
+    height: 100px;
+}
+
+button{
+    border: 1px solid transparent;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 7px;
+    position: relative;
+}
+button::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	background: rgba(255,255,255,.6);
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+button:hover::before {
+	animation: circle .5s;
+}
+
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+
+button:active{
+    margin-left: 4px;
+    box-shadow: none;
+}
+
+aside{
+    position:relative;
+    width: 12%;
+    float: right;
+    margin-top: 10px;
+    margin-right:5px;
+}
+
+.inicio{
+    box-shadow: 4px 4px 0 -1px #f4bd00;
+}
+
+.ferreteria{
+    box-shadow: 4px 4px 0 -1px #00be5c;
+}
+
+.pintura{
+    box-shadow: 4px 4px 0 -1px #eb0100;
+}
+
+.contacto{
+    box-shadow: 4px 4px 0 -1px #00689d;
+}
+
+.negrita{
+    font-weight: bold;
+    text-shadow: 2px 2px #999;
+}
