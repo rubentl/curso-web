@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/* css document */
+
+@font-face {
+    font-family: 'Monaco';
+    src: url("../fonts/Monaco_Linux-Powerline.ttf") format("ttf")
+}
+
+body {
+    font-family: "Monaco";
+    background: url("../../imagenes/fondo-material.jpg") no-repeat fixed;
+}
+
+header .parallax-container {
+    height: 230px;
+}
+
+h1.titulo {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h2.titulo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.titulo {
+    text-shadow: 2px 2px 1px white;
+    text-align: center;
+}
+
+.difuminado {
+    background-color: rgba(255, 255, 255, .6);
+}
+
+.card-image div {
+    margin: 0 auto;
+}
+
+.social img {
+    width: 95%;
+    padding: 3px;
+}
