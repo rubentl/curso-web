@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* css document */
+
+
+body{
+    background-color: black;
+}
+
+.contenedor{
+    width:100vw;
+    height: 30vh;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.caja{
+    width: 30%;
+    height: 90%;
+    transition: 2s ease-out;
+}
+
+.caja:hover{
+    border-radius: 100%;
+}
+
+.roja{
+    background-color: red;
+}
+
+.amarilla{
+    background-color:yellow;
+}
+
+.verde{
+    background-color:teal;
+}
+
+.a-verde:hover{
+    background-color: teal;
+    transform: scale(.3,.3);
+}
+.a-amarilla:hover{
+    background-color: yellow;
+    transform: scale(1.1,1.1);
+}
+.a-roja:hover{
+    background-color: red;
+    transform: scale(1,.3);
+}
+
+.zoom{
+   transition: 1s linear; 
+}
+
+.zoom:hover{
+    transform:scale(1.5,1.5);
+}
+
+.lightbox{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position: fixed;
+    width:100vw;
+    height:100vh;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: 2s linear;
+    background-color: rgba(0,0,0,.8);
+}
+
+.lightbox:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lightbox img{
+    border: 2px solid white;
+}
+

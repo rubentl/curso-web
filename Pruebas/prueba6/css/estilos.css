@@ -21,29 +21,28 @@ h1 {
 }
 
 #menu li {
-    float:left;
     border: 2px solid rgb(245, 223, 4);
-    width: 13%;
-    height: 100px;
-    margin: 0 6px;
+    width: 15%;
+    margin-bottom:5px;
     text-align: center;
-    background-color: #9a4c4c;
+    vertical-align: center;
 }
 
 #menu li a {
     display: block;
-    padding: 20px;
     color: white;
+    background-color: #9a4c4c;
     text-decoration: none;
     font-family: verdana;
+    padding: 20px;
     font-size: 15px;
     font-weight: bold;
+    transition: background-color 2s ease;
 }
 
 #menu li a:hover {
     display: block;
     color: rgb(245, 223, 4);
-    padding: 20px;
     text-decoration: underline;
     font-family: arial;
     font-style: 30px;
