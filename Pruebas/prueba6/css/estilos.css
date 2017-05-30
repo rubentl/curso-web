@@ -15,37 +15,39 @@ h1 {
 
 #menu {
     list-style: none;
-    width: 95%;
+    width: 60%;
     margin: 0 auto;
     padding: 0;
 }
 
 #menu li {
-    border: 2px solid rgb(245, 223, 4);
-    width: 15%;
+    /* border: 2px solid rgb(245, 223, 4); */
     margin-bottom:5px;
     text-align: center;
-    vertical-align: center;
+    /* vertical-align: center; */
 }
 
 #menu li a {
     display: block;
     color: white;
-    background-color: #9a4c4c;
+    /* background-color: #9a4c4c; */
     text-decoration: none;
     font-family: verdana;
     padding: 20px;
-    font-size: 15px;
+    font-size: 1em;
     font-weight: bold;
-    transition: background-color 2s ease;
+    filter:blur(2px);
+    transition: all 1s linear;
+    /* transition: background-color 2s ease; */
 }
 
 #menu li a:hover {
     display: block;
-    color: rgb(245, 223, 4);
-    text-decoration: underline;
+    color: lime;
+    /* text-decoration: underline; */
     font-family: arial;
-    font-style: 30px;
     font-weight: normal;
-    background-color: #128379;
+    filter: none;
+    font-size: 3em;
+    /* background-color: #128379; */
 }

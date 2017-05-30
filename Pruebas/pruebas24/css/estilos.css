@@ -1,0 +1,6 @@
+@charset "UTF-8";  /* css document */
+
+h1{
+    text-align: center;
+    filter: blur(5px);
+}

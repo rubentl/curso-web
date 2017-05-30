@@ -1,0 +1,102 @@
+@charset "UTF-8"; /* css document */
+
+body{
+    background-image: url("../img/pattern.png"), url("../img/fondo.jpg");
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    font-family: 'Josefin Slab', Arial, sans-serif;
+}
+
+h1{
+    color: white;
+    font-size: 3em;
+}
+
+a{
+    text-decoration:none;
+    display:block;
+}
+
+ul{
+    list-style: none;
+}
+
+ul, li{
+    padding: 0;
+    margin: 0;
+}
+
+.medium{
+    font-size: .5em;
+    font-weight: 100;
+}
+
+.container{
+    width: 80vw;
+    margin: auto;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+ul.menu{
+    width: 40vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:space-around;
+    margin-bottom:40px;
+}
+
+.menu a{
+    color: black;
+    line-height: 2em;
+    text-align: left;
+    margin-bottom: 3px;
+    padding-left: 15px;
+    font-size: 2em;
+    background-color: rgba(255,255,255,0.2);
+    transform:skew(-12deg);
+    transition: all .4s linear;
+}
+
+.menu:hover a{
+    filter: blur(3px);
+    color:white;
+    transform: skew(0deg);
+    background-color: rgba(0,0,0,0.2);
+}
+
+.menu a:hover{
+    background: transparent;
+    filter: none;
+    color:black;
+}
+
+ul.menu2{
+    width:70%;
+    font-size:.9em;
+    display: flex;
+    justify-content:space-around;
+}
+
+.cabecera{
+    color:white;
+    line-height: 2em;
+}
+
+.menu2 a{
+    background-color: white;
+    color: black;
+    line-height: 2em;
+    padding: 0 5px;
+}
+
+.menu2 a.activo{
+    color: white;
+    background-color:black;
+}
+
+.menu2 a:hover{
+    box-shadow: 0 7px 5px -4px black; 
+}
