@@ -6,31 +6,39 @@
   <title>Cambio de fondo</title>
 </head>
 <body>
+        <ul class="diapositivas">
+            <!--tantos li como imagenes-->
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
 
+    <!--<script>-->
+        <!--var tiempo = 5000;-->
+        <!--var imagenes = [-->
+            <!--'img/1.jpg',-->
+            <!--'img/2.jpg',-->
+            <!--'img/3.jpg'-->
+        <!--];-->
+        <!--var indice = 0;-->
 
-    <script>
-        var tiempo = 5000;
-        var imagenes = [
-            'img/1.jpg',
-            'img/2.jpg',
-            'img/3.jpg'
-        ];
-        var indice = 0;
+        <!--function cambiaFondo(){-->
+            <!--var imgUrl = "url('" + imagenes[indice]  + "') no-repeat";-->
 
-        function cambiaFondo(){
-            var imgUrl = "url('" + imagenes[indice]  + "') no-repeat";
+            <!--document.body.style.background = imgUrl;-->
 
-            document.body.style.background = imgUrl;
+            <!--indice++;-->
+            <!--if (indice >= imagenes.length){-->
+                <!--indice = 0;-->
+            <!--}-->
+        <!--};-->
 
-            indice++;
-            if (indice >= imagenes.length){
-                indice = 0;
-            }
-        };
-
-        (function(){
-            window.setInterval(cambiaFondo, tiempo);
-        })();
-    </script>
+        <!--(function(){-->
+            <!--window.setInterval(cambiaFondo, tiempo);-->
+        <!--})();-->
+    <!--</script>-->
 </body>
 </html>
