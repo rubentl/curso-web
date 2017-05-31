@@ -1,0 +1,95 @@
+@charset 'UTF-8'; /* CSS DOCUMENT */
+
+body, 
+img{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.caja{
+    width:300px;
+    height: 300px;
+    margin-left: 20px;
+    position:relative;
+    overflow: hidden;
+    float: left;
+}
+
+img,
+p,
+.caja{
+    transition: .5s linear;
+}
+
+.caja p{
+    z-index: -1;
+}
+
+.caja img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.redonda{
+    border-radius: 100%;
+}
+
+.playa{
+    background-color: transparent;
+    transition-delay: .5s;
+}
+
+.playa p{
+    margin-top: 150px;
+    margin-left: 10px;
+}
+
+.playa:hover img{
+    transform: translate(150px);
+}
+
+.playa:hover{
+    background-color: #ccc;
+}
+
+.aguila p{
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.aguila:hover img{
+    transform: translate(-50px) scale(.6,.6);
+}
+
+.aguila:hover p{
+    transform: translate(150px);
+}
+
+.perro p{
+    margin-top: 250px;
+    text-align: center;
+}
+
+.perro:hover img{
+    transform: translate(0,-150px);
+}
+
+.lobo p{
+    margin-top: 280px;
+    text-align: center;
+}
+
+.lobo img{
+    border-radius: 10px;
+}
+
+.lobo:hover img{
+    transform: scale(.7,.7) translate(0, 20px);
+}
