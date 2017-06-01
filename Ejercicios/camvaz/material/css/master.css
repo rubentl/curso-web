@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Monaco';
-    src: url("../fonts/Monaco_Linux-Powerline.ttf") format("ttf")
+    src: url("../fonts/Monaco_Linux-Powerline.ttf") format("ttf");
 }
 
 body {

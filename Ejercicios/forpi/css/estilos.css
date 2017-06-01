@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* css document */
+
+@font-face {
+    font-family: 'Monaco';
+    src: url("../fonts/Monaco_Linux-Powerline.ttf") format("ttf");
+}
+
+body {
+    font-family: "Monaco";
+}
+
+header.cabecera{
+    height: 150px;
+}
+
+.btn-floating.logo{
+    position:absolute;
+    top: 80px;
+    left: 40px;
+    width: 100px;
+    height:100px;
+}
+
+.logo img{
+    width: 100%;
+    margin-top: 20%;
+}
+
+h5.titulo{
+    letter-spacing: .4em;
+}
+
+.titulo{
+    text-shadow: 1px 1px 5px black;
+}
+
+.contacto{
+    position:relative;
+    height: 150px;
+}
+
+.contacto > .fixed-action-btn{
+    position:absolute;
+    display: inline-block;
+}
