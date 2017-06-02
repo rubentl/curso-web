@@ -7,8 +7,10 @@
     src: url("../fonts/Monaco_Linux-Powerline.ttf") format("ttf");
 }
 
-html,body,.block{
-    height:100%;
+html,
+body,
+.block {
+    height: 100%;
 }
 
 body {
@@ -19,68 +21,163 @@ body {
     background-attachment: fixed;
 }
 
-main{
+main {
     margin-top: 150px;
 }
-.page-footer p{
+
+.page-footer p {
     margin: 0;
     padding: 0;
 }
 
-.nav-content{
+.nav-content {
     text-align: center;
 }
 
-.fixed-action-btn.horizontal ul{
+.fixed-action-btn.horizontal ul {
     width: 350px;
 }
 
-.contacto{
-    position:relative;
+.contacto {
+    position: relative;
 }
 
-.contacto > .fixed-action-btn{
-    position:absolute;
+.contacto>.fixed-action-btn {
+    position: absolute;
     display: inline-block;
     right: 24px;
 }
 
-.logo img{
-    width:inherit;
-    margin-top: 20%;
+.logo {
+    padding: 0;
 }
 
-.logo{
-    width:100px;
-    height:100px;
+.logo img {
+    width: 90%;
+    margin-top: 10%;
 }
 
-h5.titulo{
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+h4.titulo {
     letter-spacing: .4em;
 }
 
-h1.titulo{
-    margin:0;
-    font-size:4em;
+h1.titulo {
+    margin: 0;
+    font-size: 4em;
 }
 
-.titulo{
+.titulo {
     text-shadow: 1px 1px 5px black;
 }
 
-.justificado{
-    text-align:justify;
+.justificado {
+    text-align: justify;
 }
 
-.card-image{
-    overflow:hidden;
+.card-image {
+    overflow: hidden;
 }
 
-.card-image img{
-    transform:scale(.8,.8);
-    transition: .4s linear;
+.card-image img,
+.patrocinio img {
+    -webkit-transform: scale(.8, .8);
+    transform: scale(.8, .8);
+    -webkit-transition: .4s linear;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
 }
 
-.card:hover img{
-    transform:scale(.9,.9);
+.card:hover img,
+.patrocinio:hover img {
+    -webkit-transform: scale(.9, .9);
+    transform: scale(.9, .9);
 }
+
+.patrocinio img {
+    width: 100%;
+}
+
+.activator {
+    cursor: pointer;
+}
+
+.foto {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.foto:target {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 999;
+}
+
+.foto-contenido img {
+    width: 100%;
+}
+
+.foto-contenido {
+    width: 50%;
+    margin: 50px auto;
+    position: relative;
+    border: 4px solid white;
+}
+
+.menu-fixed ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #dcedc8;
+}
+
+.menu-fixed {
+    position: fixed;
+    top: calc(100vh / 2);
+    left: 5px;
+}
+
+.menu-fixed ul li {
+    border-bottom: 1px solid #dcedc8;
+    border-left: 1px solid #dcedc8;
+    border-right: 1px solid #dcedc8;
+}
+
+.menu-fixed ul li a {
+    display: block;
+    color: #558b2f;
+    line-height: 2em;
+    padding: 0 5px;
+}
+
+.parallax-container {
+    height: 400vh;
+}
+
+
+/*
+.navegacion{
+    position:absolute;
+    bottom: 50px;
+}
+
+.diapositiva#diapo1:target,
+.diapositiva#diapo2:target,
+.diapositiva#diapo3:target,
+.diapositiva#diapo4:target,
+.diapositiva#diapo5:target{
+    height: 200px;
+}
+*/
