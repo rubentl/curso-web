@@ -7,41 +7,80 @@
     src: url("../fonts/Monaco_Linux-Powerline.ttf") format("ttf");
 }
 
+html,body,.block{
+    height:100%;
+}
+
 body {
     font-family: "Monaco";
+    background: url('../img/Logoforpi_grande.png') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
 }
 
-header.cabecera{
-    height: 150px;
+main{
+    margin-top: 150px;
+}
+.page-footer p{
+    margin: 0;
+    padding: 0;
 }
 
-.btn-floating.logo{
+.nav-content{
+    text-align: center;
+}
+
+.fixed-action-btn.horizontal ul{
+    width: 350px;
+}
+
+.contacto{
+    position:relative;
+}
+
+.contacto > .fixed-action-btn{
     position:absolute;
-    top: 80px;
-    left: 40px;
-    width: 100px;
-    height:100px;
+    display: inline-block;
+    right: 24px;
 }
 
 .logo img{
-    width: 100%;
+    width:inherit;
     margin-top: 20%;
+}
+
+.logo{
+    width:100px;
+    height:100px;
 }
 
 h5.titulo{
     letter-spacing: .4em;
 }
 
+h1.titulo{
+    margin:0;
+    font-size:4em;
+}
+
 .titulo{
     text-shadow: 1px 1px 5px black;
 }
 
-.contacto{
-    position:relative;
-    height: 150px;
+.justificado{
+    text-align:justify;
 }
 
-.contacto > .fixed-action-btn{
-    position:absolute;
-    display: inline-block;
+.card-image{
+    overflow:hidden;
+}
+
+.card-image img{
+    transform:scale(.8,.8);
+    transition: .4s linear;
+}
+
+.card:hover img{
+    transform:scale(.9,.9);
 }
