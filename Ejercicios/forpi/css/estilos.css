@@ -58,8 +58,12 @@ main {
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
+}
+
+.logo.halfway-fab {
+    bottom: -50px;
 }
 
 h4.titulo {
@@ -71,6 +75,71 @@ h1.titulo {
     font-size: 4em;
 }
 
+.linea {
+    position: fixed;
+    width: 400px;
+    height: 1px;
+    z-index: 1000;
+    opacity: 0;
+    animation-duration: 20s;
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+}
+
+.a55 {
+    top: 55px;
+}
+
+.a50 {
+    top: 50px;
+}
+
+.a155 {
+    top: 155px;
+    animation-delay: 10s;
+}
+
+.a150 {
+    top: 150px;
+    animation-delay: 10s;
+}
+
+.izda-dcha {
+    animation-name: izda-dcha; 
+}
+
+.dcha-izda {
+    animation-name: dcha-izda; 
+}
+
+@keyframes izda-dcha {
+    0% {
+        left: 100px;
+        opacity: .1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        left: calc(100vw - 500px);
+        opacity: .1;
+    }
+}
+
+@keyframes dcha-izda {
+    0% {
+        left: calc(100vw - 500px);
+        opacity: .1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        left: 100px;
+        opacity: .1;
+    }
+}
+
 .titulo {
     text-shadow: 1px 1px 5px black;
 }
@@ -79,8 +148,18 @@ h1.titulo {
     text-align: justify;
 }
 
+.subrayado{
+    box-shadow: 0 1px 0 0 black;
+}
+
 .card-image {
     overflow: hidden;
+}
+
+.formacion {
+    font-weight:bold;
+    text-decoration: underline;
+    text-shadow: 1px 1px #ccc;
 }
 
 .card-image img,
@@ -122,7 +201,7 @@ h1.titulo {
 .foto:target {
     opacity: 1;
     pointer-events: auto;
-    z-index: 999;
+    z-index: 900;
 }
 
 .foto-contenido img {
@@ -147,6 +226,7 @@ h1.titulo {
     position: fixed;
     top: calc(100vh / 2);
     left: 5px;
+    z-index: 900;
 }
 
 .menu-fixed ul li {
@@ -162,8 +242,32 @@ h1.titulo {
     padding: 0 5px;
 }
 
-.parallax-container {
-    height: 400vh;
+/* .parallax-container { */
+/*     height: 400vh; */
+/* } */
+/*  */
+@media screen and (max-width:600px) {
+  h4.titulo{
+    letter-spacing: .2em;
+  }
+  main{
+    margin-top:0;
+  }
+  #conocenos{
+    display: inline-block;
+    position:relative;
+    width:100vw;
+  }
+}
+
+@media screen and (max-width:993px){
+  .menu-fixed{
+    position: relative;
+    left:0;
+    top:initial;
+    width:100vw;
+    text-align:center;
+  }
 }
 
 
