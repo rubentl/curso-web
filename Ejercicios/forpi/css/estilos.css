@@ -1,4 +1,4 @@
-@charset "utf-8";
+    @charset "utf-8";
 
 /* css document */
 
@@ -8,13 +8,15 @@
 }
 
 html,
-body,
-.block {
+body {
     height: 100%;
 }
 
+html {
+    font-family: "Monaco", "Roboto", sans-serif;
+}
+
 body {
-    font-family: "Monaco";
     background: url('../img/Logoforpi_grande.png') no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -53,8 +55,8 @@ main {
 }
 
 .logo img {
-    width: 90%;
-    margin-top: 10%;
+    width: 98%;
+    margin-top: 20%;
 }
 
 .logo {
@@ -81,8 +83,11 @@ h1.titulo {
     height: 1px;
     z-index: 1000;
     opacity: 0;
+    -webkit-animation-duration: 20s;
     animation-duration: 20s;
-    animation-timing-function: linear; 
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
 
@@ -96,20 +101,38 @@ h1.titulo {
 
 .a155 {
     top: 155px;
+    -webkit-animation-delay: 10s;
     animation-delay: 10s;
 }
 
 .a150 {
     top: 150px;
+    -webkit-animation-delay: 10s;
     animation-delay: 10s;
 }
 
 .izda-dcha {
-    animation-name: izda-dcha; 
+    -webkit-animation-name: izda-dcha;
+    animation-name: izda-dcha;
 }
 
 .dcha-izda {
-    animation-name: dcha-izda; 
+    -webkit-animation-name: dcha-izda;
+    animation-name: dcha-izda;
+}
+
+@-webkit-keyframes izda-dcha {
+    0% {
+        left: 100px;
+        opacity: .1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        left: calc(100vw - 500px);
+        opacity: .1;
+    }
 }
 
 @keyframes izda-dcha {
@@ -122,6 +145,20 @@ h1.titulo {
     }
     100% {
         left: calc(100vw - 500px);
+        opacity: .1;
+    }
+}
+
+@-webkit-keyframes dcha-izda {
+    0% {
+        left: calc(100vw - 500px);
+        opacity: .1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        left: 100px;
         opacity: .1;
     }
 }
@@ -148,7 +185,8 @@ h1.titulo {
     text-align: justify;
 }
 
-.subrayado{
+.subrayado {
+    -webkit-box-shadow: 0 1px 0 0 black;
     box-shadow: 0 1px 0 0 black;
 }
 
@@ -157,7 +195,7 @@ h1.titulo {
 }
 
 .formacion {
-    font-weight:bold;
+    font-weight: bold;
     text-decoration: underline;
     text-shadow: 1px 1px #ccc;
 }
@@ -185,34 +223,21 @@ h1.titulo {
     cursor: pointer;
 }
 
-.foto {
-    background-color: rgba(0, 0, 0, .8);
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    -webkit-transition: 2s ease;
-    transition: 2s ease;
-}
-
-.foto:target {
-    opacity: 1;
-    pointer-events: auto;
-    z-index: 900;
-}
-
-.foto-contenido img {
-    width: 100%;
-}
-
-.foto-contenido {
-    width: 50%;
-    margin: 50px auto;
-    position: relative;
+img.materialboxed {
+    width: 70%;
     border: 4px solid white;
+}
+
+.menu-movil {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+a.boton-movil {
+    display: block;
+    color: #558b2f;
 }
 
 .menu-fixed ul {
@@ -242,46 +267,23 @@ h1.titulo {
     padding: 0 5px;
 }
 
-/* .parallax-container { */
-/*     height: 400vh; */
-/* } */
-/*  */
 @media screen and (max-width:600px) {
-  h4.titulo{
-    letter-spacing: .2em;
-  }
-  main{
-    margin-top:0;
-  }
-  #conocenos{
-    display: inline-block;
-    position:relative;
-    width:100vw;
-  }
+    h4.titulo {
+        letter-spacing: .2em;
+    }
+    main {
+        margin-top: 0;
+    }
+    #conocenos {
+        display: inline-block;
+        position: relative;
+        width: 100vw;
+    }
+    .menu-movil {
+        top: 10px;
+        left: 10px;
+    }
+    .brand-logo {
+        margin-left: 10px;
+    }
 }
-
-@media screen and (max-width:993px){
-  .menu-fixed{
-    position: relative;
-    left:0;
-    top:initial;
-    width:100vw;
-    text-align:center;
-  }
-}
-
-
-/*
-.navegacion{
-    position:absolute;
-    bottom: 50px;
-}
-
-.diapositiva#diapo1:target,
-.diapositiva#diapo2:target,
-.diapositiva#diapo3:target,
-.diapositiva#diapo4:target,
-.diapositiva#diapo5:target{
-    height: 200px;
-}
-*/

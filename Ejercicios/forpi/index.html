@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="author" content="Rubén Toca">
     <meta name="description" content="Página de presentación para Formación Piélagos">
+    <link rel="icon" href="favicon.png" type="image/png">
     <!-- Import font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"
-    />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" href="css/estilos.css" type="text/css" media="screen" charset="utf-8">
     <title>Formación Piélagos</title>
 </head>
@@ -32,9 +32,8 @@
                 <div class="nav-content light-green lighten-2 contacto
                     hide-on-small-only">
                     <a href="#conocenos" class="btn-floating light-green darken-1
-                        z-depth-2 hoverable left halfway-fab logo tooltipped"
-                        data-position="right" data-delay="50" data-tooltip="Conócenos">
-                        <img src="img/logo_icono.png" alt="logo" class="responsive-img">
+                        z-depth-2 hoverable left halfway-fab logo tooltipped" data-position="right" data-delay="50" data-tooltip="Conócenos">
+                        <img src="img/logo_sin_letras_sin_fondo.png" alt="logo" class="responsive-img">
                     </a>
                     <h1 class="nav-title titulo white-text text-lighten-5 center-align">PIÉLAGOS</h1>
                     <div class="fixed-action-btn horizontal">
@@ -44,15 +43,11 @@
                         <ul>
                             <li>
                                 <a class="btn-floating green waves-effect
-                                    waves-light tooltipped" data-position="top"
-                                    data-delay="50"
-                                    data-tooltip="administracion@formacionpielagos.com"
-                                    href="mailto:administracion@formacionpielagos.com"><i class="fa fa-envelope-o"></i></a>
+                                    waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="administracion@formacionpielagos.com" href="mailto:administracion@formacionpielagos.com"><i class="fa fa-envelope-o"></i></a>
                             </li>
                             <li>
                                 <a class="btn-floating lime  waves-effect
-                                    waves-light tooltipped" data-position="top"
-                                    data-delay="50" data-tooltip="942-585-525"><i class="fa fa-phone"></i></a>
+                                    waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="942-585-525"><i class="fa fa-phone"></i></a>
                             </li>
                             <li>
                                 <a class="btn-floating red waves-effect waves-light"><i class="fa fa-youtube"></i></a>
@@ -65,16 +60,27 @@
                 </div>
             </nav>
         </div>
+
+        <div class="hide-on-large-only menu-movil">
+            <a href="#" class="boton-movil" data-activates="slide-out">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+            <ul class="side-nav" id="slide-out">
+                <li class="center-align light-green lighten-3 z-depth-3">Menú</li>
+                <li><a href="#inicio" class="hoverable waves-effect waves-teal">Inicio</a></li>
+                <li><a href="#quienes" class="hoverable waves-effect waves-teal">Quienes somos</a></li>
+                <li><a href="#formacion" class="hoverable waves-effect waves-teal">Formación</a></li>
+                <li><a href="#colocacion" class="hoverable waves-effect waves-teal">Agencia de colocación</a></li>
+                <li><a href="#servicios" class="hoverable waves-effect waves-teal">Servicios</a></li>
+                <li><a href="#subscribirse" class="hoverable waves-effect waves-teal">Suscribirse</a></li>
+                <li><a href="#contacto" class="hoverable waves-effect waves-teal">Contacto</a></li>
+            </ul>
+        </div>
+
         <div id="conocenos" class="modal">
             <div class="modal-content ">
                 <h4 class="subrayado"><i class="fa fa-id-card fa-fw right"></i>&nbsp;Bienvenidos</h4>
-                <p>Bienvenido a la web de <span class="formacion">Formación Piélagos</span>. Somos un centro privado
-                    dedicado a la formación. Contamos con una sede en Renedo de
-                    Piélagos con aulas totalmente preparadas para impartir nuestras
-                    acciones formativas. A través de este canal y las redes sociales,
-                    informamos del inicio y programación de nuestros cursos, bolsas
-                    de empleo, ofertas de trabajo, etc. No te desconectes, inFÓRMATE
-                    con nosotros.</p>
+                <p>Bienvenido a la web de <span class="formacion">Formación Piélagos</span>. Somos un centro privado dedicado a la formación. Contamos con una sede en Renedo de Piélagos con aulas totalmente preparadas para impartir nuestras acciones formativas. A través de este canal y las redes sociales, informamos del inicio y programación de nuestros cursos, bolsas de empleo, ofertas de trabajo, etc. No te desconectes, inFÓRMATE con nosotros.</p>
             </div>
             <div class="modal-footer hide-on-small-only">
                 <a href="#inicio" class="modal-action modal-close waves-effect
@@ -86,7 +92,7 @@
     </header>
 
     <main>
-        <div class="menu-fixed z-depth-1 col s12 m2">
+        <div class="menu-fixed z-depth-1 col s12 m2 hide-on-med-and-down">
             <ul class="light-green lighten-5 hoverable ">
                 <li><a href="#inicio" class="hoverable waves-effect waves-teal">Inicio</a></li>
                 <li><a href="#quienes" class="hoverable waves-effect waves-teal">Quienes somos</a></li>
@@ -98,7 +104,6 @@
             </ul>
         </div>
 
-        <!--        <div id="diapo1" class="diapositiva"></div>-->
         <div class="row">
             <div class="col s12 m7 l7 offset-l2">
                 <div class="card z-depth-2 hoverable medium">
@@ -111,8 +116,7 @@
                             <i class="fa fa-hand-o-right"></i>
                         </a>
                         <span class="card-title activator">Crea tu tienda online</span>
-                        <p class="justificado">Curso Gratuito de Crea tu Tienda Online. Formación prioritariamente
-                            para personas ocupadas.</p>
+                        <p class="justificado">Curso Gratuito de Crea tu Tienda Online. Formación prioritariamente para personas ocupadas.</p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title">Crea tu tienda online <i class="right fa fa-times"></i></span>
@@ -128,18 +132,12 @@
                         <img src="img/fse.gif" alt="Fondo Europeo">
                     </div>
                     <div class="card-content">
-                        <p class="justificado">Acciones formativas cofinanciadas 50% por la Unión Europea
-                            a través del Fondo Social Europeo.</p>
+                        <p class="justificado">Acciones formativas cofinanciadas 50% por la Unión Europea a través del Fondo Social Europeo.</p>
                     </div>
                 </div>
             </div>
-            <!--
-            <div class="col s12 m1 hide-on-small-only">
-               <a class="btn-floating btn-large waves-effect waves-light light-green lighten-4 right navegacion" href="#diapo2"><i class="fa fa-arrow-down"></i></a>
-            </div>
--->
         </div>
-        <!--        <div id="diapo2" class="diapositiva"></div>-->
+
         <div class="row">
             <div class="col s12 m5 l3 offset-l2">
                 <div class="card z-depth-2 hoverable medium">
@@ -155,11 +153,7 @@
                     </div>
                     <div class="card-reveal">
                         <span class="card-title">Formación para ocupados <i class="right fa fa-times"></i></span>
-                        <p>Puedes acceder al plan de formación que impartiremos en
-                            varias modalidades destinados prioritariamente a personas
-                            ocupadas. Un 40% de las plazas pueden ser ocupadas
-                            por personas en situación por desempleo. Si necesitas
-                            ampliar información, ponte en contacto con nosotros.</p>
+                        <p>Puedes acceder al plan de formación que impartiremos en varias modalidades destinados prioritariamente a personas ocupadas. Un 40% de las plazas pueden ser ocupadas por personas en situación por desempleo. Si necesitas ampliar información, ponte en contacto con nosotros.</p>
                     </div>
                 </div>
             </div>
@@ -174,8 +168,7 @@
                             <i class="fa fa-hand-o-right"></i>
                         </a>
                         <span class="card-title activator">Curso de Gestión de Alérgenos</span>
-                        <p class="justificado">Gestión de alérgenos en el sector de hostelería. Formación
-                            prioritariamente para personas ocupadas</p>
+                        <p class="justificado">Gestión de alérgenos en el sector de hostelería. Formación prioritariamente para personas ocupadas</p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title">Curso de Gestión de Alérgenos <i class="right fa fa-times"></i></span>
@@ -185,14 +178,8 @@
                     </div>
                 </div>
             </div>
-            <!--
-            <div class="col s12 m1 hide-on-small-only">
-               <a class="btn-floating btn-large waves-effect waves-light light-green lighten-4 right navegacion" href="#diapo3"><i class="fa fa-arrow-down"></i></a>
-            </div>
--->
         </div>
 
-        <!--        <div id="diapo3" class="diapositiva"></div>-->
         <div class="row">
             <div class="col s12 m6 l5 offset-l2">
                 <div class="card z-depth-2 hoverable medium">
@@ -205,8 +192,7 @@
                             <i class="fa fa-hand-o-right"></i>
                         </a>
                         <span class="card-title activator">Cursos de Inglés.</span>
-                        <p class="justificado">Clase de Inglés para todos los niveles. Aprende divertido
-                            en un ambiente inmersivo.</p>
+                        <p class="justificado">Clase de Inglés para todos los niveles. Aprende divertido en un ambiente inmersivo.</p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title">Clases de Inglés <i class="right fa fa-times"></i></span>
@@ -225,9 +211,7 @@
                             <i class="fa fa-hand-o-right"></i>
                         </a>
                         <span class="card-title activator">Boletín de cursos.</span>
-                        <p class="justificado">Inscríbete en nuestro boletín de cursos y cuando vayamos
-                            a comenzar te avisaremos con preferencia por si es
-                            de tu interés</p>
+                        <p class="justificado">Inscríbete en nuestro boletín de cursos y cuando vayamos a comenzar te avisaremos con preferencia por si es de tu interés</p>
                     </div>
                     <div class="card-reveal" id="subscribirse">
                         <span class="card-title">Formulario de suscripción:<i class="right fa fa-times"></i></span>
@@ -249,8 +233,7 @@
                             <div class="row">
                                 <div class="input-field col s9">
                                     <i class="prefix fa fa-envelope fa-fw"></i>
-                                    <input id="email" type="email" class="validate" data-error="wrong" data-success="right"
-                                        required>
+                                    <input id="email" type="email" class="validate" data-error="wrong" data-success="right" required>
                                     <label for="email">Correo electrónico</label>
                                 </div>
                                 <div class="col s3">
@@ -261,34 +244,14 @@
                     </div>
                 </div>
             </div>
-            <!--
-            <div class="col s12 m1 hide-on-small-only">
-               <a class="btn-floating btn-large waves-effect waves-light light-green lighten-4 right navegacion" href="#diapo4"><i class="fa fa-arrow-down"></i></a>
-            </div>
--->
         </div>
 
-
-        <!--        <div id="diapo4" class="diapositiva"></div>-->
         <div class="row hide-on-small-only">
-            <div class="col m10 offset-m2 carousel">
-                <a href="#foto1" class="carousel-item"><img src="img/grandes/1.JPG" alt="instalaciones 1"></a>
-                <a href="#foto2" class="carousel-item"><img src="img/grandes/11.JPG" alt="instalaciones 11"></a>
-                <a href="#foto3" class="carousel-item"><img src="img/grandes/10.JPG" alt="instalaciones 10"></a>
-                <a href="#foto4" class="carousel-item"><img src="img/grandes/13.JPG" alt="instalaciones 13"></a>
-                <a href="#foto5" class="carousel-item"><img src="img/grandes/2.JPG" alt="instalaciones 2"></a>
-                <a href="#foto6" class="carousel-item"><img src="img/grandes/30.jpg" alt="instalaciones 30"></a>
-                <a href="#foto7" class="carousel-item"><img src="img/grandes/40.jpg" alt="instalaciones 40"></a>
-                <a href="#foto8" class="carousel-item"><img src="img/grandes/41.jpg" alt="instalaciones 41"></a>
+            <div class="col m8 offset-m2 l8 offset-l4" id="carrusel">
+                <img src="img/grandes/1.JPG" alt="Mi imagen de slider" id="el-slider" class="materialboxed z-depth-5">
             </div>
-            <!--
-            <div class="col s12 m1 hide-on-small-only">
-               <a class="btn-floating btn-large waves-effect waves-light light-green lighten-4 right navegacion" href="#diapo5"><i class="fa fa-arrow-down"></i></a>
-            </div>
--->
         </div>
 
-        <!--        <div id="diapo5" class="diapositiva"></div>-->
         <div class="row">
             <div class="col s12 m3 offset-m2 patrocinio">
                 <img src="img/agencia.jpg" alt="Agencia de colocación">
@@ -306,66 +269,22 @@
             </div>
         </div>
 
-        <div class="foto" id="foto1">
-            <div class="foto-contenido">
-                <a href="#carrusel"><img src="img/grandes/1.JPG" alt=""></a>
-            </div>
-        </div>
-        <div class="foto" id="foto2">
-            <div class="foto-contenido">
-                <a href="#carrusel"><img src="img/grandes/11.JPG" alt=""></a>
-            </div>
-        </div>
-        <div class="foto" id="foto3">
-            <div class="foto-contenido">
-                <a href="#carrusel"><img src="img/grandes/10.JPG" alt=""></a>
-            </div>
-        </div>
-        <div class="foto" id="foto4">
-            <div class="foto-contenido">
-                <a href="#carrusel"><img src="img/grandes/13.JPG" alt=""></a>
-            </div>
-        </div>
-        <div class="foto" id="foto5">
-            <div class="foto-contenido">
-                <a href="#carrusel"><img src="img/grandes/2.JPG" alt=""></a>
-            </div>
-        </div>
-        <div class="foto" id="foto6">
-            <div class="foto-contenido">
-                <a href="#carrusel"><img src="img/grandes/30.jpg" alt=""></a>
-            </div>
-        </div>
-        <div class="foto" id="foto7">
-            <div class="foto-contenido">
-                <a href="#carrusel"><img src="img/grandes/40.jpg" alt=""></a>
-            </div>
-        </div>
-        <div class="foto" id="foto8">
-            <div class="foto-contenido">
-                <a href="#carrusel"><img src="img/grandes/41.jpg" alt=""></a>
-            </div>
-        </div>
-
-
     </main>
 
 
     <footer class="page-footer light-green darken-3">
         <div class="container">
             <div class="row valign-wrapper">
-                <div class="col s12 m4 offset-m2 certificado">
+                <div class="col s12 m6 l4 offset-l2 certificado">
                     <img src="img/calidad.png" class="responsive-img z-depth-3
                       hoverable" alt="certificado iso 9001">
                 </div>
-                <div class="col s12 m6">
-                    <p><i class="fa fa-home fa-fw"></i>&nbsp;Bº Sorribero Bajo nº15
-                        Bajo
+                <div class="col s12 m6 l6">
+                    <p><i class="fa fa-home fa-fw"></i>&nbsp;Bº Sorribero Bajo nº15 Bajo
                     </p>
                     <p><i class="fa fa-phone fa-fw"></i>&nbsp;Tfno/fax.- 942 585 525
                     </p>
-                    <p><i class="fa fa-street-view fa-fw"></i>&nbsp;Renedo de Piélagos
-                        (Cantabria)
+                    <p><i class="fa fa-street-view fa-fw"></i>&nbsp;Renedo de Piélagos (Cantabria)
                     </p>
                     <p>
                         <a href="mailto:administracion@formacionpielagos.com" class="white-text">
@@ -381,15 +300,11 @@
             <ul>
                 <li>
                     <a class="btn-floating green waves-effect
-                        waves-light tooltipped" data-position="left"
-                        data-delay="50"
-                        data-tooltip="administracion@formacionpielagos.com"
-                        href="mailto:administracion@formacionpielagos.com"><i class="fa fa-envelope-o"></i></a>
+                        waves-light tooltipped" data-position="left" data-delay="50" data-tooltip="administracion@formacionpielagos.com" href="mailto:administracion@formacionpielagos.com"><i class="fa fa-envelope-o"></i></a>
                 </li>
                 <li>
                     <a class="btn-floating lime  waves-effect
-                        waves-light tooltipped" data-position="left"
-                        data-delay="50" data-tooltip="942-585-525"><i class="fa fa-phone"></i></a>
+                        waves-light tooltipped" data-position="left" data-delay="50" data-tooltip="942-585-525"><i class="fa fa-phone"></i></a>
                 </li>
                 <li>
                     <a class="btn-floating red waves-effect waves-light"><i class="fa fa-youtube"></i></a>
@@ -401,8 +316,7 @@
         </div>
         <div class="footer-copyright light-green darken-4">
             <div class="container">
-                <i class="fa fa-copyright fa-fw"></i>&nbsp; 2017 Centro de Formación
-                Piélagos S.L.
+                <i class="fa fa-copyright fa-fw"></i>&nbsp; 2017 Centro de Formación Piélagos S.L.
             </div>
         </div>
     </footer>
@@ -411,20 +325,42 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" charset="utf-8">
-        $(document).ready(function()
-        {
-            $('.carousel').carousel(
-            {
+        $(document).ready(function() {
+            $('.carousel').carousel({
                 duration: 100,
                 dist: -80,
             });
-            $('#conocenos').modal(
-            {
+            $('#conocenos').modal({
                 inDuration: 1000,
                 outDuration: 800,
-                dismissible:true
+                dismissible: true
+            });
+            $('.boton-movil').sideNav({
+                menuWidth: 250,
+                closeOnClick: true,
+                draggable: true
             });
         });
+        window.onload = function() {
+            var nombre = [
+                "img/grandes/7.JPG",
+                "img/grandes/3.JPG",
+                "img/grandes/2.JPG",
+                "img/grandes/4.JPG",
+                "img/grandes/5.JPG",
+                "img/grandes/6.JPG"
+            ];
+            var img = 0;
+            var contenido = document.getElementById('el-slider');
+            setInterval(function() {
+                if (img > (nombre.length - 1)) {
+                    img = 0;
+                }
+                contenido.src = nombre[img];
+                img++;
+            }, 2000);
+        };
+
     </script>
 
 </body>
