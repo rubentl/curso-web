@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/estilos.css">
-  <title>Cambio de fondo</title>
+    <meta charset="UTF-8">
+    <title>Cambio de fondo</title>
+    <style type="text/css" media="screen">
+        h1{
+            text-align: center;
+            color: white;
+        }
+        p{
+            padding: 100px;
+            margin: 100px;
+            text-align: justify;
+            color: #ccc;
+        }
+    </style>
 </head>
+
 <body>
-        <ul class="diapositivas">
-            <!--tantos li como imagenes-->
-            <!-- las imágenes se colocan en el css -->
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+    <!-- Usar esta estructura con este identificador y poniendo en duration los -->
+    <!-- segundos que debe durar toda la secuencia. Ten en cuenta que esos segundos se -->
+    <!-- dividirán entre el número de imágenes. -->
+    <ul id="fondo" duration='36'>
+        <li img="img/1.jpg"></li>
+        <li img="img/2.jpg"></li>
+        <li img="img/3.jpg"></li>
+    </ul>
 
-        <h1>Cambiando el fondo</h1>
+    <h1>Cambiando el fondo</h1>
+    <p>Lorem minima cumque optio ducimus numquam omnis explicabo Nemo facere natus ipsum quisquam numquam Ex nam modi adipisci distinctio obcaecati incidunt. Amet tenetur provident non fugit amet! Similique commodi perferendis ab atque ut Obcaecati fugiat illum soluta dolor neque Quod quas qui optio enim vero nemo? Qui dolor nihil illo deserunt suscipit Voluptas inventore quasi dolorem quia corrupti quae, aliquam nihil qui. Provident culpa animi quaerat maxime magnam Animi eligendi molestias tempore nesciunt maxime Sunt doloremque dolores deserunt necessitatibus voluptatibus! Quisquam explicabo sequi enim velit et Nisi sapiente fuga molestiae enim ipsa, odio Aperiam soluta distinctio aperiam eos obcaecati non Quia fugit numquam tempore ipsam aspernatur Sed eius possimus amet laudantium vitae. Corporis eligendi praesentium facere vitae atque porro Consequuntur labore illo voluptatibus assumenda qui Tenetur expedita earum facere velit explicabo Illo vitae itaque quae libero nihil ex! Accusantium temporibus perferendis quia libero atque! Ipsa quam architecto quas excepturi assumenda. Sit perferendis atque sequi similique aliquam. Corrupti ab autem cumque quos omnis, provident. Sunt maiores repudiandae facilis asperiores consequuntur! Officiis sint officiis perferendis quos aspernatur, nobis itaque. Est aspernatur neque nam suscipit corporis. Voluptates perspiciatis sequi eaque dolorem omnis nisi In sit velit repellendus vero magni fuga Praesentium quaerat tenetur.</p>
+    <p>Consectetur officia tempora nam iusto accusantium Magni fugiat ea culpa odio ipsa. Ratione veniam culpa est alias magni Ipsa ipsam similique consectetur similique ipsam doloremque. Accusantium ducimus laboriosam atque excepturi molestias Blanditiis cumque nulla veniam aliquam quam modi Saepe perferendis aperiam rem vel veritatis aperiam Libero nisi repudiandae at odit hic? Praesentium doloremque doloremque vel sapiente sunt! Laborum voluptas quos corrupti molestiae minus veritatis libero? Aliquam natus optio cum autem et est quam. Eos esse officiis facere ex ab aliquam Aut rerum alias deleniti non sit perferendis nostrum? Corporis iusto debitis exercitationem ut cumque Dolores error aut iste quisquam quas?</p>
 
-
+    <!-- Son necesarios estos dos archivos para lograr el efecto -->
+    <script src="js/zepto.min.js"></script>
+    <script src="js/fondo.js"></script>
 </body>
+
 </html>
