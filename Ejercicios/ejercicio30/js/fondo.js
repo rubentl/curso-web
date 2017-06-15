@@ -42,20 +42,23 @@
         return true;
     });
 
-    function fondo(item) {
-        setInterval(function(item) {
-            $(item)
-                .animate({
-                    opacity: 1
-                }, efecto, 'linear', function() {
-                    setTimeout(function(item) {
-                        $(item).animate({
-                            opacity: 0
-                        }, efecto, 'linear');
-                    }, efecto, item)
-                });
-        }, duracion, item);
-        return true;
+    function fondo(item, efecto){
+        $(item)
+            .animate({
+                opacity: 1
+            }, efecto, 'linear', function() {
+                setTimeout(function(item) {
+                    $(item).animate({
+                        opacity: 0
+                    }, efecto, 'linear');
+                }, efecto, item)
+            });
+        return item;
+    };
+
+    function siguienteFondo(item, duracion) {
+        setInterval(fondo, duracion, item, efecto);
+        return item;
     };
 
     let origen = new Array();
@@ -66,6 +69,6 @@
     origen.push(primero);
 
     origen.forEach(function(item, index) {
-        setTimeout(fondo, index * delay, item);
+        setTimeout(siguienteFondo, index * delay, item, duracion);
     });
 })(Zepto)
