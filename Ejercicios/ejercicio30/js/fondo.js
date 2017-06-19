@@ -46,20 +46,23 @@
     });
 
     // Efecto fadeIn y fadeOut
-    function fondo(item) {
-        setInterval(function(item) {
-            $(item)
-                .animate({
-                    opacity: 1
-                }, efecto, 'linear', function() {
-                    setTimeout(function(item) {
-                        $(item).animate({
-                            opacity: 0
-                        }, efecto, 'linear');
-                    }, efecto, item)
-                });
-        }, duracion, item);
-        return true;
+    function fondo(item, efecto){
+        $(item)
+            .animate({
+                opacity: 1
+            }, efecto, 'linear', function() {
+                setTimeout(function(item) {
+                    $(item).animate({
+                        opacity: 0
+                    }, efecto, 'linear');
+                }, efecto, item)
+            });
+        return item;
+    };
+
+    function siguienteFondo(item, duracion) {
+        setInterval(fondo, duracion, item, efecto);
+        return item;
     };
 
     // Copia de los elementos con las imagenes
@@ -75,6 +78,6 @@
     // A cada elemento lo colocamos en la secuencia temporal
     // y le aplicamos los efectos
     origen.forEach(function(item, index) {
-        setTimeout(fondo, index * delay, item);
+        setTimeout(siguienteFondo, index * delay, item, duracion);
     });
 })(Zepto)
