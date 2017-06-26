@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sample page</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="lib/normalize/normalize.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="cabecera">
+      <div class="logo">
+        <img src="img/logo.png" alt="logotipo de empresa">
+      </div>
+      <nav class="menus">
+        <div class="menu__superior">
+          <ul>
+            <li><a href="index.html"><img src="img/img1.gif" alt=""></a></li>
+            <li><a href="#"><img src="img/img2.gif" alt=""></a></li>
+            <li><a href="#"><img src="img/img3.gif" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="menu__inferior">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="ourAircraft.html">OUR AIRCRAFT</a></li>
+            <li><a href="safety.html">SAFETY</a></li>
+            <li><a href="charters.html">CHARTERS</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+      <article>
+        <section class="presentacion">
+          <div class="izda">
+            <h1>COMFORT</h1>
+            <h2>Guaranteed</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint tempore, quam voluptate tenetur quaerat quia hic, minus voluptates possimus vitae.</p>
+          </div>
+        </section>
+      </article>
+      <article class="articulo separacion">
+        <aside class="barra-lateral">
+          <h2>Your Flight Planner</h2>
+          <form action="#" method="post">
+            <div class="radio-buttom">
+              <div class="form__opcion">
+                <input type="radio" name="tipo" value="Round Trip" id="trip">
+                <label for="trip">Round Trip</label>
+              </div>
+              <div class="form__opcion">
+                <input type="radio" name="tipo" value="Empty-Leg" id="leg">
+                <label for="leg">Empty-Leg</label>
+              </div>
+              <div class="form__opcion">
+                <input type="radio" name="tipo" value="One Way" id="way">
+                <label for="way">One Way</label>
+              </div>
+              <div class="form__opcion">
+                <input type="radio" name="tipo" value="Multi-Leg" id="multileg">
+                <label for="multileg">Multi-Leg</label>
+              </div>
+            </div>
+            <div class="partida">
+              <label for="partida">Leaving From:</label><br/>
+              <input type="text" size="30" name="partida" id="partida" placeholder="Enter City or Airport Code">
+            </div>
+            <div class="destino">
+              <label for="destino">Going To:</label><br/>
+              <input type="text" size="30" name="destino" id="destino" placeholder="Enter City or Airport Code">
+            </div>
+            <div class="salida">
+              <label for="salida">Departure Date and Time</label><br/>
+              <input type="text" name="salida" id="salida" size="14" placeholder="mm/dd/yy">
+              <input type="text" name="horaSalida" size="10" placeholder="12:00am">
+            </div>
+            <div class="llegada">
+              <label for="llegada">Return Date and Time:</label><br/>
+              <input type="text" name="llegada" id="llegada" size="14" placeholder="mm/dd/yy">
+              <input type="text" name="horaLlegada" size="10" placeholder="12:00am">
+            </div>
+            <div class="pasajeros">
+              <label for="pasajeros">Passenger(s)</label><br/>
+              <input type="text" name="pasajeros" id="pasajeros" size="15" placeholder="# passengers">
+              <input type="submit" class="boton_azul" value="GO!">
+            </div>
+          </form>
+          <h2>Safety Experts</h2>
+          <p>Sit, quis, porro! Reprehenderit et, nostrum magnam sed repellendus minima eum a nisi necessitatibus. </p>
+        </aside>
+        <section class="seccion">
+          <div class="safety">
+            <h2>About Safety</h2>
+            <div class="imagenTexto">
+              <img src="img/page3_img1.jpg" alt="directivos">
+              <p><span class="negrita">Lorem ipsum dolor</span> sit amet, consectetur adipisicing elit. Vero perferendis, aliquid totam molestiae, quibusdam doloremque. Neque veritatis iste sequi ducimus. Consectetur iure molestias natus natus amet? Ab atque vero tempora tempore quasi! Veritatis voluptas dolores voluptates eveniet asperiores. Repudiandae qui! </p>
+            </div>
+
+            <div class="imagenTexto">
+              <img src="img/page3_img2.jpg" alt="azafata">
+              <p><span class="negrita">Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Possimus sed a ducimus totam quae modi sapiente odio labore error qui sequi cupiditate dicta iste, non, nihil quia esse enim, deserunt aliquid sit optio molestias? Perferendis quos dignissimos magnam facilis commodi!</p>
+            </div>
+            <a href="#" class="boton_negro read_more">READ MORE</a>
+          </div>
+          <div class="safety">
+            <h2>Safety Programs</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa assumenda maxime amet, aliquid, recusandae fuga vero accusamus consequatur vitae. Recusandae in neque error expedita reiciendis totam explicabo, doloremque impedit aliquam?</p>
+          </div>
+        </section>
+      </article>
+  <article class="articulo">
+    <aside class="barra-lateral">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, repellat saepe eligendi quidem, voluptatum alias.</p>
+      <a href="#" class="boton_azul read_more">READ MORE</a>
+    </aside>
+        <section class="seccion">
+            <div class="lista_enlaces">
+              <ul>
+                <li><a href="#">Lorem ipsum dolor sit amet, consectetur.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet, consectetur.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Lorem ipsum dolor sit amet, consectetur.</a></li>
+                <li><a href="#">Lorem sit amet, consectetur.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet, consectetur.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+              </ul>
+            </div>
+        </section>
+      </article>
+  </main>
+
+  <footer class="pie"></footer>
+
+</body>
+
+</html>
