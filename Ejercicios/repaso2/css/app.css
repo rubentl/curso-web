@@ -55,7 +55,7 @@ header {
   height: 100%;
 }
 
-.cabecera .menus {
+nav.menus {
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,7 +212,8 @@ form .radio-buttom {
   justify-content: space-between;
 }
 
-form .pasajeros input[type=submit] {
+form input[type=submit],
+form input[type=reset]{
   margin-left: 20px;
   border: none;
 }
@@ -221,7 +222,8 @@ form .pasajeros input[type=submit] {
 .partida,
 .salida,
 .llegada,
-.radio-buttom {
+.radio-buttom,
+h2{
   margin-bottom: 10px;
 }
 
@@ -239,7 +241,8 @@ form .pasajeros input[type=submit] {
 
 a.boton_negro,
 a.boton_azul,
-form .pasajeros input[type=submit] {
+form input[type=submit],
+form input[type=reset]{
   border-radius: 3px;
   text-align: center;
   padding: 5px 15px;
@@ -247,12 +250,14 @@ form .pasajeros input[type=submit] {
   font-style: italic;
 }
 
-a.boton_negro {
+a.boton_negro,
+.contact__botones input{
   background: -webkit-gradient(linear, left top, left bottom, from(#aaa), to(#000));
   background: linear-gradient(#aaa, #000);
 }
 
-a.boton_negro:hover {
+a.boton_negro:hover,
+.contact__botones input:hover{
   background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#aaa));
   background: linear-gradient(#000, #aaa);
 }
@@ -313,7 +318,7 @@ a.noticias {
   flex: 0 0 55%;
 }
 
-.cita {
+.cita, .gracias {
   background-image: url(../img/bg_testimonials.gif), -webkit-gradient(linear, left top, left bottom, from(#55acc7), to(#207792));
   background-image: url(../img/bg_testimonials.gif), linear-gradient(#55acc7, #207792);
   background-repeat: no-repeat;
@@ -349,22 +354,13 @@ p.cita__dcha {
   margin-bottom:10px;
 }
 
-.sales .imagenTexto img,
-.safety .imagenTexto img,
-.charter .imagenTexto img{
+.imagenTexto img{
   margin-right: 10px;
   width: 30%;
 }
 
 .management {
   margin-top: 40px;
-}
-
-.management h2,
-.sales h2,
-.safety h2,
-.charter h2{
-  margin-bottom: 10px;
 }
 
 .management .imagenTexto img {
@@ -386,6 +382,7 @@ p.cita__dcha {
 }
 
 .lista_enlaces a,
+td a,
 .enlaces_sencillos a{
   color: blue;
   text-decoration: underline;
@@ -406,6 +403,50 @@ aside .enlaces_sencillos{
     margin-top: 10px;
     width:100%;
 }
+
+table{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+tr{
+    line-height: 1.5em;
+}
+
+td{
+    vertical-align: top;
+}
+
+.contact {
+    width:100%;
+    padding: 0 10%;
+}
+
+.contact tr{
+    line-height:2em;
+}
+
+.contact form input[type=text],
+.contact form textarea{
+    width:100%;
+    border: 1px solid #50a7c2;
+}
+
+.contact__botones{
+    display:flex;
+    justify-content:flex-end;
+}
+
+.contact__botones input{
+    width: 20%;
+}
+
+.gracias{
+    margin: 25% auto;
+    text-align: center;
+    color: white;
+}
+
 
 .pie {
   background: url(../img/bg_bot.jpg) no-repeat;
