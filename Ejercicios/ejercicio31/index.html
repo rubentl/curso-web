@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/estilos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Night Sky</title>
+    </head>
+    <body>
+
+        <header>
+            <div class="logo"><h1>Welcome To Night Sky</h1></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="activo">Home</a></li>
+                    <li><a href="work.html">Our Work</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+        <section class="presentacion">
+            <div class="capadeslider">
+                <img src="images/home_1.jpg" alt="Luces" id="el-slider">
+            </div>
+        </section>
+        <section class="principal">
+            <aside>
+                <h2 class="marco">New Website</h2>  
+                <p>Welcome to our new website. Please have a look around, any feedback is much appreciated..</p>
+                <h2 class="marco">Lastest Update</h2>
+                <h3>February 2013</h3>
+                <p>Sit reiciendis perspiciatis ratione explicabo sint? Fuga doloremque enim veritatis expedita et tempore error Vero maxime atque ex tenetur eaque</p>
+                <h3>January 2013</h3>
+                <p>Elit hic facilis debitis delectus qui Cum sunt eveniet consequatur nostrum temporibus Iusto iste odio vitae sint soluta? Ipsam rem?</p>
+            </aside>
+            <article>
+                <h1>Welcome To Your Website</h1>
+                <p>Elit est veritatis velit sit fugit ab? Error perferendis quisquam vitae numquam architecto Ab corporis assumenda dolor labore ab. Provident dolore exercitationem voluptatem qui nemo Unde illum cumque magnam nostrum corrupti Repellat error itaque alias praesentium vel Numquam tempore corrupti architecto ratione ab Temporibus minima cumque excepturi nisi placeat Illum</p>
+                <div class="news">
+                  <p>Lorem nostrum atque rerum quae non Magnam placeat dignissimos eos animi eum ipsum! Unde omnis voluptatum quod nam et Aspernatur facere earum id non nam Nisi doloribus obcaecati enim dolorem?</p>
+                  <a href="#" class="marco">Read more</a>
+                </div>
+                <div class="news">
+                  <p>Consectetur nemo quos beatae error libero. Sed facilis dolor quo blanditiis doloribus voluptatem Voluptas neque ad excepturi pariatur quam sed quisquam? Ea veritatis odit nemo sit iure voluptatum Tempora tempore?</p>
+                  <a href="#" class="marco">Read more</a>
+                </div>
+                <div class="news">
+                  <p>Consectetur sunt ullam iusto dolorum aspernatur pariatur Sed obcaecati commodi atque voluptatum commodi sint. Reprehenderit modi voluptates reiciendis asperiores earum Eveniet voluptates reprehenderit aliquam ducimus ut? Soluta magnam aliquid ut.</p>
+                  <a href="#" class="marco">Read more</a>
+                </div>
+                <div class="news">
+                  <p>Dolor consectetur reiciendis doloremque quod vero. Nihil unde reiciendis eum modi explicabo. Dignissimos sequi sed molestias ipsa illo tenetur Vel sint quasi perferendis ipsum autem. Vitae perspiciatis aliquam fugiat nam?</p>
+                  <a href="#" class="marco">Read more</a>
+                </div>
+            </article>
+        </section>
+        </main>
+
+        <footer>
+          <div class="news marco">
+            <h2>Lastest Blog Post</h2>
+            <p>Amet ut asperiores obcaecati tenetur doloremque Facere at ut dolores.</p>
+                  <a href="#" class="marco_blanco">Read more</a>
+          </div>
+          <div class="news marco">
+            <h2>Lastest News</h2>
+            <p>Amet ut asperiores obcaecati tenetur doloremque Facere at ut dolores.</p>
+                  <a href="#" class="marco_blanco">Read more</a>
+          </div>
+          <div class="news marco">
+            <h2>Lastest Projects</h2>
+            <p>Amet ut asperiores obcaecati tenetur doloremque Facere at ut dolores.</p>
+                  <a href="#" class="marco_blanco">Read more</a>
+          </div>
+        </footer>
+
+ <script type="text/javascript">
+        window.onload = function()
+        {
+            var nombre = [
+                "images/home_1.jpg",
+                "images/home_2.jpg",
+            ];
+
+            var img = 0;
+            var contenido = document.getElementById('el-slider');
+            setInterval(function()
+            {
+                if (img > (nombre.length - 1))
+                {
+                    img = 0;
+                }
+                contenido.src = nombre[img];
+                img++;
+            }, 2000);
+        };
+    </script>
+    </body>
+</html>
