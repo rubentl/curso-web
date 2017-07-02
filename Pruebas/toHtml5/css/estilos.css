@@ -28,14 +28,14 @@ ul{
     margin: 0;
 }
 
-a{
+.menu__link{
     text-decoration:none;
     color: black;
     display:block;
     padding: 5px 10px;
 }
 
-a:hover{
+.menu__link:hover{
     background-color:black;
     color:white;
 }
@@ -44,39 +44,33 @@ a:hover{
     color: blue;
     font-size:3em;
     font-weight:bold;
-}
-
-nav.sociales{
-    font-size: 2em;
-    padding: 0 30px;
-}
-
-.logo{
     flex: 0 0 30%;
     text-align:center;
 }
 
-nav.sociales{
+.sociales{
+    font-size: 2em;
+    padding: 0 30px;
     flex: 0 0 30%;
 }
 
-nav.sociales ul{
+.menu__sociales{
     display:flex;
     justify-content:space-around;
     align-items:center;
 }
 
-nav..sociales li{
+.menu__sociales-item{
     flex: 0 0 20%; 
 }
 
-nav.menu_main{
+.menu{
     width:100%;
     background-color:white;
     margin-bottom:60px;
 }
 
-nav.menu_main ul{
+.menu__main{
     margin: 0 auto;
     width: 40%;
     display:flex;
@@ -91,14 +85,14 @@ main{
     align-items:flex-start;
 }
 
-main aside{
+aside{
     flex: 1 1 10%;
     padding: 10px;
     background-color:white;
     margin:0 50px;
 }
 
-main article{
+article{
     flex: 3 1 80%;
     padding: 20px;
     margin: 0 50px;
@@ -119,7 +113,7 @@ article p:last-child{
     margin: 20px auto;
 }
 
-nav.menu_aside{
+.menu__lateral{
     text-align:center;
 }
 
