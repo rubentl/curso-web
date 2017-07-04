@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Solicitud de información</title>
+</head>
+<body>
+    <h1>SOLICITUD DE INFORMACIÓN AL CURSO ACTIVIDADES ADMINISTRATIVAS EN LA RELACIÓN CON EL CLIENTE</h1>
+    <p>* campo obligatorio</p>
+    <form action="sendmail.php" method="post">
+        <div class="parte">
+          <p class="parte__titulo">Datos personales</p>
+          <dl>
+            <dt><label for="dni">DNI*</label></dt>
+            <dd><input id="dni" type="number" name="dni" required >Sin Puntos y sin letra</dd>
+            <dt><label for="nombre">Nombre y Apellidos*</label></dt>
+            <dd><input id="nombre" type="text" name="nombre" size="60" required></dd>
+            <dt><label for="email">Correo e-mail</label></dt>
+            <dd><input id="email" type="email" name="email" size="50"></dd>
+            <dt><label for="nacimiento">Fecha de Nacimiento</label></dt>
+            <dd><input id="nacimiento" type="date" name="nacimiento">dd/mm/aaaa</dd>
+            <dt><label for="telefono">Teléfono de contacto*</label></dt>
+            <dd><input id="telefono" type="tel" name="telefono" required> </dd>
+            <dt><label for="direccion">Dirección</label></dt>
+            <dd><input id="direccion" type="text" name="direccion" size="60"></dd>
+            <dt><label for="localidad">Localidad</label></dt>
+            <dd><input id="localidad" type="text" name="localidad" size="40"></dd>
+            <dt><label for="postal">Código Postal</label></dt>
+            <dd><input id="postal" type="number" name="postal"></dd>
+          </dl>
+        </div>
+
+        <div class="parte desempleado">
+          <p class="parte__titulo">
+            <input id="desempleado" type="checkbox" name="desempleado" value="true">
+            <label for="desempleado">Situación Laboral si ahora estás en desempleo*</label>
+          </p>
+          <p>Si ahora estás en situación de desempleo rellena esta parte del formulario</p>
+          <dl>
+            <dt><label for="prestacion">Cobra prestación o subsidio*</label></dt>
+            <dd><input id="prestacion" type="checkbox" name="prestacion" value="true" required></dd>
+            <dt><label for="oficina">Oficina de Empleo de </label></dt>
+            <dd><input id="oficina" type="text" name="oficina" size="40"></dd>
+            <dt><label for="inscripcion">Fecha de Inscripción</label></dt>
+            <dd><input id="inscripcion" type="date" name="inscripcion">dd/mm/aaaa</dd>
+          </dl>
+        </div>
+        
+        <div class="parte empleado">
+          <p class="parte__titulo">
+            <input id="empleado" type="checkbox" name="empleado" value="true">
+            <label for="empleado">Situación Laboral si ahora estás trabajando*</label>
+          </p>
+          <dl>
+              <dt><label for="empresa">Nombre de Empresa*</label></dt>
+              <dd><input id="empresa" type="text" name="empresa" size="60" required></dd>
+              <dt><label for="contrato">Tipo de Contrato</label></dt>
+              <dd><select id="contrato" name="contrato">
+                    <option value="" selected> </option>
+                    <option value="indefinido">Indefinido</option>
+                    <option value="temporal">Temporal</option>
+                    <option value="practicas">Prácticas</option>
+                  </select>
+              </dd>
+              <dt><label for="nif">Número de inscripción CIF o NIF</label></dt>
+              <dd><input id="nif" type="text" name="nif"></dd>
+              <dt><label for="sector">Sector Empresarial</label></dt>
+              <dd><select id="sector" name="sector">
+                    <option value="" selected> </option>
+                    <option value="industria">Industria</option>
+                    <option value="comercio">Comercio</option>
+                  </select>
+              </dd>
+              <dt><label for="trabajadores">Nº de Trabajadores en Plantilla*</label></dt>
+              <dd>
+                <select id="trabajadores" name="trabajadores" required>
+                  <option value="" selected> </option>
+                  <option value="menos10">Menos de 10</option>
+                  <option value="entre10-50">Entre 10 y 50</option>
+                  <option value="mas 50">Más de 50</option>
+                </select>
+              </dd>
+              <dt><label for="juridica">Naturaleza Jurídica</label></dt>
+              <dd>
+                <select id="juridica" name="juridica">
+                  <option value="" selected> </option>
+                  <option value="sa">Sociedad Anónima</option>
+                  <option value="sl">Sociedad Limitada</option>
+                  <option value="coo">Sociedad Cooperativa</option>
+                </select>
+              </dd>
+          </dl>
+        </div>
+    
+        <p class="condiciones"><label for="acepto"> De conformidad con lo   establecido en la Ley 15/1999, de 13 de diciembre, de Protección de Datos de   Carácter Personal, le informamos de que todos los datos facilitados serán   incorporados a un fichero cuya titularidad corresponde a Centro de Formación Piélagos S.L. Podrá ejercer su derecho de acceso, rectificación,   cancelación y oposición al tratamiento de sus datos personales, en los términos   y condiciones previstos en la normativa
+            vigente, mediante comunicación remitida   a la siguiente dirección de correo electrónico: <a href="mailto:administracion@formacionpielagos.com">administracion@formacionpielagos.com</a>*</label><input id="acepto" value="true" name="acepto" type="checkbox" required> </p>
+        <p><input name="enviar" value="Enviar" type="submit"></p>
+        
+    </form>
+  
+</body>
+</html>

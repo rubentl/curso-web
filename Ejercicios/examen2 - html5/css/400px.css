@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* css document */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding-top:20px;
+    background-color:white;
+    color: black;
+    font-family:Arial, sans-serif;
+}
+
+#contenedor{
+    width:400px;
+    margin: 0 auto;
+    position:relative;
+}
+
+.cabecera{
+    position:relative;
+    width:100%;
+    height:60px;
+    border-bottom: 2px solid #777;
+    text-align:center;
+}
+
+.logo{
+    position:relative;
+    margin: 0 auto;
+    display:inline-block;
+    width:50%;
+}
+
+.logo img{
+    margin-top:15px;
+    width:100%;
+}
+
+.dispositivos{
+    position:relative;
+    float:right;
+    width:20%;
+    overflow:hidden;
+}
+
+.dispositivos ul{
+    margin: 15px auto;
+    padding-top:5px;
+    list-style:none;
+    overflow:hidden;
+}
+
+.dispositivos li{
+    position:relative;
+    float:left;
+}
+
+.dispositivos a{
+    text-decoration:none;
+    color:black;
+}
+
+.dispositivos img{
+    height:30px;
+    margin: 5px auto;
+}
+
+.menu{
+    position:relative;
+    float:left;
+    margin-right: 5%;
+}
+
+.menu:hover ul,
+#menuopciones:target
+{
+    display:block;
+    position:absolute;
+    top: 60px;
+    left:0px;
+    width:400px;
+}
+
+.menuicono{
+    background-color:black;
+    width:20px;
+    height:20px;
+    margin:35px 15px 5px 15px;
+}
+
+.menuicono img{
+    width:100%;
+}
+
+.menuicono a{
+    display:block;
+}
+
+.menu ul{
+    list-style:none;
+    display:none;
+    z-index: 1000;
+    width:100%;
+}
+
+.menu li{
+    width:100%;
+    border-bottom:1px solid #333;
+ }
+
+.menu ul a{
+    display:block;
+    padding: 10px 10px;
+    width:calc(100% - 20px);
+    color:#999;
+    background-color:black;
+    text-decoration:none;
+}
+
+.menu ul a:hover{
+    color:white;
+}
+
+.aladcha{
+    float:right;
+}
+
+#portada{
+    clear:both;
+    width:100%;
+}
+
+#titulo{
+    width:100%;
+    margin-top:100px;
+}
+
+h1{
+    text-align:center;
+    padding-top: 20px;
+    font-size:1.3em;
+    font-weight:400;
+}
+
+.subrayado{
+    height:2px;
+    margin: 10px auto;
+    width:100px;
+    background-color:black;
+}
+
+#presentacion{
+    width:90%;
+    margin: 20px auto;
+}
+
+.negrita{
+    font-weight:bold;
+}
+
+.parrafo{
+    position:relative;
+    clear:both;
+    width:100%;
+    overflow:hidden;
+}
+
+.izda{
+    position:relative;
+    width:15%;
+    float:left;
+}
+
+.dcha{
+    position:relative;
+    width:85%;
+    float:right;
+}
+
+.izda img{
+    width:100%;
+}
+
+#pie{
+    width:100%;
+    background-color:#2e2f31;
+    color:white;
+    overflow:hidden;
+    padding:30px 20px;
+    clear:both;
+}
+
+#pie p{
+    margin-bottom: 6px;
+}
+
+#pie h2{
+    margin-bottom: 15px;
+}
+
+.pies{
+    position:relative;
+    width: 100%;
+}
+
+.correos{
+    text-decoration:none;
+    color:green;
+}

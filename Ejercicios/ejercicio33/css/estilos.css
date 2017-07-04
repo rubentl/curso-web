@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'BallparkWeiner';
+    src:url('../polices/ballpark.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Dayrom';
+    src:url('../polices/dayrom.ttf') format('truetype');
+}
+
+body{
+    background:url('../img/fond_jaune.png') no-repeat center;
+    background-size: cover;
+    padding: 1% 3%;
+    display:flex;
+    flex-direction:column;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+.cabecera__logo{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:flex-start;
+    align-content:center;
+    width:20%;
+}
+
+.logo__imagen{
+    width:40%;
+}
+
+.cabecera__logo h1{
+    font-family:'BallparkWeiner', serif;
+    font-size:4em;
+    margin-bottom:0;
+}
+.menu__link{
+    font-family:'Dayrom', serif;
+    border-bottom: 3px solid transparent;
+}
+
+.menu__link:hover{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+.cabecera{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+
+.logo__parrafo{
+    font-family: Dayrom, serif;
+    font-size:1.5em;
+    margin-top:0;
+}
+
+.menu{
+    width: 50%;
+}
+
+.menu__principal{
+    width:100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    justify-content:space-around;
+}
+
+.menu__link{
+    display:block;
+    line-height:1.5em;
+    padding-left:2%;
+    padding-right:2%;
+    text-align: center;
+    text-decoration:none;
+    color: black;
+    font-size:2em;
+}
+
+.separacion{
+    background-image:url('../img/separateur.png');
+    background-repeat:repeat-x;
+    width:100%;
+    height:5px;
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align:center;
+}
+
+.sombra{
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.8);
+}
+
+.redondo{
+    border-radius:10px;
+}
+
+.sanfrancisco{
+    background-image:url('../img/sanfrancisco.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    height:200px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+.sanfrancisco__pie{
+    background-color:rgba(0,0,0,.6);
+    padding-left: 10px;
+    padding-right: 10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.sanfrancisco__parrafo{
+    color:white;
+}
+
+.sanfrancisco__boton{
+    line-height:1.9em;
+    padding-left:5px;
+    padding-right:5px;
+    color: white;
+    text-decoration:none;
+    background:linear-gradient(red, darkred);
+    border-radius:5px;
+}
+
+.sanfrancisco__boton:hover{
+    background:linear-gradient(darkred, red);
+}
+
+.seccion{
+    padding-top:20px;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.articulo{
+    text-align:justify;
+    width:75%;
+}
+
+.articulo__titulo{
+    display:flex;
+    justify-content:space-between;
+    width:40%;
+}
+
+.articulo img{
+    width:60px;
+}
+
+.articulo__titulo h1,
+.lateral h1,
+.pie__pies h1{
+    font-family: Dayrom;
+    font-size:1.4em;
+    font-weight:normal;
+}
+
+.lateral{
+    width:20%;
+    background-color: rgb(112,107,100);
+    padding: 20px;
+    color: white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position:relative;
+}
+
+.flechita{
+    position:absolute;
+    top:30%;
+    left:-12px;
+}
+
+.flechita--dcha{
+    position:absolute;
+    top:30%;
+    right:-12px;
+    transform:rotate(180deg);
+}
+
+.lateral__imagen{
+    margin: 2px auto;
+}
+
+.lateral__sociales{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+}
+
+.pie{
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+}
+
+.pie__pies{
+    width:30%;
+}
+
+.pie__fotos{
+    display:flex;
+}
+
+.listas{
+    display:flex;
+    width:80%;
+    justify-content:space-between;
+}
+
+.listas__lista{
+    list-style-image: url('../img/ico_liensexterne.png');
+    margin: 0;
+    padding: 0;
+}
+
+.dcha{
+    order: 2;
+}
